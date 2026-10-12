@@ -1,3 +1,5 @@
+> Cập nhật mới nhất: [kiểm tra lại và rà video mới](RECHECK-2026-10-12.md). Nội dung bên dưới giữ lịch sử các lượt kiểm tra trước.
+
 # Đối chiếu cuối với đề gốc ngày 12 tháng 10 năm 2026
 
 Cập nhật bàn giao: sinh viên đã thay video bằng 2026-10-12 15-31-45.mp4. Đánh giá video 80,83 giây bên dưới là lịch sử của bản cũ; chưa rà soát video mới để xác nhận đủ chức năng.

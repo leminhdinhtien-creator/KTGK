@@ -1,3 +1,5 @@
+> Cập nhật mới nhất: [kiểm tra lại và rà video mới](RECHECK-2026-10-12.md). Nội dung bên dưới giữ lịch sử các lượt kiểm tra trước.
+
 # Kiểm thử cuối ngày 12 tháng 10 năm 2026
 
 25/25 Backend tests đạt; 2/2 Flutter widget tests đạt; Flutter analyze không có vấn đề. Build Backend và Flutter web thành công. Kiểm tra hiện tại dùng SQL Server thật localhost/ToeicReadingDB; không thay bằng SQLite hoặc dữ liệu mock trong sản phẩm.

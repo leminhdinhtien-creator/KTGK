@@ -81,3 +81,5 @@ Giao diện hiện tại lấy từ **Figma Make V2** “Upgrade Reading Studio 
 ## Cấu trúc bàn giao
 
 Hai thư mục source chính: `Backend/` (ASP.NET MVC, database, docs, tools) và `Frontend/` (Flutter, design Figma). `videos/` chứa video theo yêu cầu thầy. README và .gitignore ở thư mục gốc. Các thư mục ẩn .runtime, .recovery, Backend/.work và Backend/.template-original chỉ phục vụ máy local, không đưa lên GitHub. Word và báo cáo trong Backend/docs được nộp riêng.
+
+Kiểm tra lại sau khi gom thư mục: [kết quả ngày 12/10/2026](Backend/docs/RECHECK-2026-10-12.md). Đã rà video mới 93,20 giây; xem báo cáo để phân biệt chức năng đã kiểm thử và phần Mobile/video cần bổ sung.
