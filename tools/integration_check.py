@@ -88,6 +88,14 @@ def main():
     assert bad.getvalue()!=content
     c,j=file_call(opener,token,'/Reading/Import',bad.getvalue());assert c>=400 or j.get('success') is False
     assert counts()==before;record('Invalid DOCX rejected with no partial records')
+    invalid_part6=io.BytesIO()
+    with zipfile.ZipFile(io.BytesIO(content)) as source,zipfile.ZipFile(invalid_part6,'w') as target:
+        for name in source.namelist():
+            raw=source.read(name)
+            if name=='word/document.xml':raw=raw.replace(b'&lt;stem&gt;131&lt;/stem&gt;',b'&lt;stem&gt;Choose a word&lt;/stem&gt;',1)
+            target.writestr(name,raw)
+    c,j=file_call(opener,token,'/Reading/Import',invalid_part6.getvalue());assert c>=400 or j.get('success') is False
+    assert counts()==before;record('Non-numeric Part 6 stem rejected without partial SQL writes')
     original=next((e for e in public if e['name']==preview['name']),None)
     if original is None:
         c,j=file_call(opener,token,'/Reading/Import',content);exam_id=unwrap(c,j)['id'];record('Valid DOCX atomic SQL import')

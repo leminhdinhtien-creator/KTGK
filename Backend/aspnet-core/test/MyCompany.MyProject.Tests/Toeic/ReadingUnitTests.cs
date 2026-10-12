@@ -38,6 +38,11 @@ public class ReadingUnitTests
     [InlineData("answerStatus=&quot;proposed&quot;","answerStatus=&quot;verified&quot;")]
     public void InvalidWordIsRejectedBeforePersistence(string from,string to)
     { Assert.Throws<UserFriendlyException>(()=>new TaggedWordParser().Parse(Change(s=>s.Replace(from.Replace("&quot;","\""),to.Replace("&quot;","\""))))); }
+    [Theory][InlineData("Choose a word")][InlineData("132")]
+    public void Part6StemMustMatchItsQuestionNumber(string stem)
+    {
+        Assert.Throws<UserFriendlyException>(()=>new TaggedWordParser().Parse(Change(s=>s.Replace("&lt;stem&gt;131&lt;/stem&gt;","&lt;stem&gt;"+stem+"&lt;/stem&gt;"))));
+    }
     [Fact] public void NonDocxRejected() => Assert.Throws<UserFriendlyException>(()=>new TaggedWordParser().Parse(new byte[]{1,2,3}));
     [Theory][InlineData(0,0,0,100)][InlineData(20,10,20,70)][InlineData(100,0,100,0)]
     public void ScoreCountsAnsweredWrongAndSkipped(int correct,int wrong,int expectedCorrect,int skipped)

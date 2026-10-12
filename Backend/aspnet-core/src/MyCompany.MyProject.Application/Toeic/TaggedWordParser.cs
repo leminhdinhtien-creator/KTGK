@@ -109,6 +109,7 @@ public class TaggedWordParser : ITransientDependency
         if(!new[]{"A","B","C","D"}.Contains(answer) || !new[]{"proposed","verified"}.Contains(status)) Fail("Đáp án hoặc trạng thái sai câu "+n);
         var stem=Single(e,"stem"); Require(stem,"stem",Array.Empty<string>(),Array.Empty<string>());
         if(string.IsNullOrWhiteSpace(stem.Value)) Fail("Thiếu stem câu "+n);
+        if(p.Number==6 && stem.Value.Trim()!=n.ToString()) Fail("Part 6: nội dung câu hỏi phải chỉ là số câu "+n);
         var q=new ReadingQuestion{Number=n,Text=stem.Value,CorrectAnswer=answer,AnswerStatus=status,Part=p,Exam=p.Exam,Group=g};
         foreach(var c in e.Elements("option")) { Require(c,"option",new[]{"letter"},Array.Empty<string>()); if(string.IsNullOrWhiteSpace(c.Value)) Fail("Lựa chọn rỗng câu "+n); q.Choices.Add(new ReadingChoice{Letter=Attr(c,"letter"),Text=c.Value,Question=q}); }
         if(!q.Choices.Select(c=>c.Letter).SequenceEqual(new[]{"A","B","C","D"})) Fail("Câu "+n+": cần đúng 4 lựa chọn A/B/C/D.");

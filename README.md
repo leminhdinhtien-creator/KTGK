@@ -4,7 +4,7 @@ Lê Minh Đình Tiến · 2380602224 · 23DTHC7.
 
 Backend dùng template ASP.NET Boilerplate MVC hiện có, .NET 9 và SQL Server local. Mobile Flutter mở thẳng thư viện, không đăng nhập. Admin demo local vào trực tiếp; ngoài Development/localhost vẫn yêu cầu quyền Pages.ReadingAdmin.
 
-Đã kiểm chứng ngày 12/10/2026: build Backend; 23/23 kiểm thử Backend; kết nối và migrations SQL localhost; import Word hợp lệ, từ chối file sai không ghi dở; sửa/lưu/đọc lại SQL; API thi và chấm bài trống, một phần, đủ 100 câu, nộp trùng và hết hạn. Kết quả chi tiết: [TESTING](docs/TESTING.md). Flutter có bản web và kiểm thử không có màn hình đăng nhập. Chưa kiểm chứng Android trên thiết bị/emulator, mất mạng trên thiết bị, hoặc một lượt thi liên tục đủ 75 phút. Không tuyên bố hoàn thành 100%.
+Đã kiểm chứng ngày 12/10/2026: build Backend; 25/25 kiểm thử Backend; kết nối và migrations SQL localhost; import Word hợp lệ, từ chối file sai không ghi dở; sửa/lưu/đọc lại SQL; API thi và chấm bài trống, một phần, đủ 100 câu, nộp trùng và hết hạn. Kết quả chi tiết: [TESTING](docs/TESTING.md). Flutter có bản web và kiểm thử không có màn hình đăng nhập. Chưa kiểm chứng Android trên thiết bị/emulator, mất mạng trên thiết bị, hoặc một lượt thi liên tục đủ 75 phút. Không tuyên bố hoàn thành 100%.
 
 ## Bàn giao
 
@@ -74,3 +74,6 @@ tools/integration_check.py kiểm thử HTTP và SQL thật khi Backend đang ch
 
 
 Giao diện hiện tại lấy từ **Figma Make V2** “Upgrade Reading Studio Design”: thư viện tìm kiếm, màn thi responsive, tab bài đọc/câu hỏi và tài liệu, điều hướng 100 câu, trạng thái lưu, kết quả có bộ lọc và Admin xem theo nhóm. Nguồn xuất trực tiếp được giữ trong `design/figma-make`, bản gốc trong `src/legacy`. Xem [bàn giao thiết kế V2](docs/FIGMA-V2-HANDOFF.md). Mở http://localhost:5100/ và nhấn Ctrl+F5 để nhận bản giao diện mới.
+
+
+Đối chiếu cuối với đề gốc: [FINAL-REVIEW](docs/FINAL-REVIEW.md). Chức năng đã kiểm tra đạt; phần Mobile chưa chạy trên thiết bị/emulator và video 80,83 giây chưa demo đủ chức năng/giao diện V2. Đã bổ sung kiểm tra Part 6 stem chỉ chứa đúng số câu; fresh import và biên tập SQL được kiểm thử trên fixture riêng.
