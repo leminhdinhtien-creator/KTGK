@@ -1,0 +1,26 @@
+MyCompany.MyProject/
+MyCompany.MyProject.zip
+.recovery/
+.runtime/
+tmp/
+**/bin/
+**/obj/
+**/TestResults/
+**/node_modules/
+**/.dart_tool/
+**/build/
+**/.gradle/
+**/local.properties
+**/appsettings.Local.json
+**/secrets.json
+*.log
+.env*
+!.env.example
+design/figma-make/.figma/
+**/App_Data/Logs/
+
+# Word/report submitted separately; generated evidence stays local.
+*.docx
+*.pdf
+docs/evidence/
+docs/ERD.png

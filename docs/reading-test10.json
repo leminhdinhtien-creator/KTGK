@@ -1,0 +1,1939 @@
+{
+  "name": "ETS TOEIC Reading Test 10",
+  "answerStatus": "proposed",
+  "sourcePdfSha256": "63d47fefe35de0a11e43c81e81a8c6a4e0ca7bdc71dc4fda1e519e854e4069ca",
+  "questions": [
+    {
+      "number": 101,
+      "page": 2,
+      "col": 0,
+      "y": 301.9580078125,
+      "text": "Please contact the product distributor, not the retail store, if------- need replacement parts.",
+      "options": {
+        "A": "your",
+        "B": "you",
+        "C": "yourself",
+        "D": "yours"
+      },
+      "answer": "B",
+      "status": "proposed"
+    },
+    {
+      "number": 102,
+      "page": 2,
+      "col": 0,
+      "y": 402.7680358886719,
+      "text": "AGU Group's insurance rates have remained steady ------- the last three years.",
+      "options": {
+        "A": "at",
+        "B": "by",
+        "C": "to",
+        "D": "for"
+      },
+      "answer": "D",
+      "status": "proposed"
+    },
+    {
+      "number": 103,
+      "page": 2,
+      "col": 0,
+      "y": 489.7250061035156,
+      "text": "Sage Bistro's menu features a ------- variety of seafood items than Almaner Pavilion's.",
+      "options": {
+        "A": "wide",
+        "B": "widest",
+        "C": "wider",
+        "D": "widely"
+      },
+      "answer": "C",
+      "status": "proposed"
+    },
+    {
+      "number": 104,
+      "page": 2,
+      "col": 0,
+      "y": 580.5979614257812,
+      "text": "Frequent training enables our technicians to resolve most computer problems -------.",
+      "options": {
+        "A": "swiftly",
+        "B": "avoidably",
+        "C": "doubtfully",
+        "D": "rigidly"
+      },
+      "answer": "A",
+      "status": "proposed"
+    },
+    {
+      "number": 105,
+      "page": 2,
+      "col": 1,
+      "y": 301.9580078125,
+      "text": "Most of the manufacturing sector has reported higher profits as a result of the trade -------.",
+      "options": {
+        "A": "agreement",
+        "B": "agreeing",
+        "C": "agreeably",
+        "D": "agrees"
+      },
+      "answer": "A",
+      "status": "proposed"
+    },
+    {
+      "number": 106,
+      "page": 2,
+      "col": 1,
+      "y": 402.7680358886719,
+      "text": "The cooking instructions call for reducing the heat and letting the sauce simmer ------- it thickens.",
+      "options": {
+        "A": "whereas",
+        "B": "likewise",
+        "C": "instead",
+        "D": "until"
+      },
+      "answer": "D",
+      "status": "proposed"
+    },
+    {
+      "number": 107,
+      "page": 2,
+      "col": 1,
+      "y": 503.79803466796875,
+      "text": "The Cullingford Bridge took a ------- short amount of time to be repaired.",
+      "options": {
+        "A": "surprise",
+        "B": "surprisingly",
+        "C": "surprising",
+        "D": "surprised"
+      },
+      "answer": "B",
+      "status": "proposed"
+    },
+    {
+      "number": 108,
+      "page": 2,
+      "col": 1,
+      "y": 592.8380126953125,
+      "text": "The company's summer picnic is ------- held outside town, in Warren County Lakeside Park.",
+      "options": {
+        "A": "apart",
+        "B": "always",
+        "C": "much",
+        "D": "far"
+      },
+      "answer": "B",
+      "status": "proposed"
+    },
+    {
+      "number": 109,
+      "page": 3,
+      "col": 0,
+      "y": 61.94904708862305,
+      "text": "Ms. Navarro wants to fill the administrative assistant ------- as soon as possible.",
+      "options": {
+        "A": "worker",
+        "B": "employment",
+        "C": "position",
+        "D": "experience"
+      },
+      "answer": "C",
+      "status": "proposed"
+    },
+    {
+      "number": 110,
+      "page": 3,
+      "col": 0,
+      "y": 150.99903869628906,
+      "text": "The item that Ms. Bak ordered from our catalog is ------- until 16 October.",
+      "options": {
+        "A": "unavailable",
+        "B": "occupied",
+        "C": "uneventful",
+        "D": "delivered"
+      },
+      "answer": "A",
+      "status": "proposed"
+    },
+    {
+      "number": 111,
+      "page": 3,
+      "col": 0,
+      "y": 239.7890167236328,
+      "text": "Kespi Brand cookies, delicious by -------, are even better when paired with a glass of milk.",
+      "options": {
+        "A": "they",
+        "B": "theirs",
+        "C": "them",
+        "D": "themselves"
+      },
+      "answer": "D",
+      "status": "proposed"
+    },
+    {
+      "number": 112,
+      "page": 3,
+      "col": 0,
+      "y": 328.5890197753906,
+      "text": "The North India Electricians Association ------- various online courses covering licensure, safety, and technology.",
+      "options": {
+        "A": "offers",
+        "B": "takes",
+        "C": "pays",
+        "D": "allows"
+      },
+      "answer": "A",
+      "status": "proposed"
+    },
+    {
+      "number": 113,
+      "page": 3,
+      "col": 0,
+      "y": 429.3890075683594,
+      "text": "The latest survey shows that our downtown store is more ------- for local shoppers than our suburban location.",
+      "options": {
+        "A": "conveniences",
+        "B": "conveniently",
+        "C": "convenience",
+        "D": "convenient"
+      },
+      "answer": "D",
+      "status": "proposed"
+    },
+    {
+      "number": 114,
+      "page": 3,
+      "col": 0,
+      "y": 530.1890258789062,
+      "text": "Weaving Fire is the most popular television show ------- women ages 18- 34.",
+      "options": {
+        "A": "among",
+        "B": "toward",
+        "C": "within",
+        "D": "along"
+      },
+      "answer": "A",
+      "status": "proposed"
+    },
+    {
+      "number": 115,
+      "page": 3,
+      "col": 1,
+      "y": 62.438018798828125,
+      "text": "------- a designer has completed a prototype product, the rest of the team will be invited to critique it.",
+      "options": {
+        "A": "So that",
+        "B": "Whether",
+        "C": "From",
+        "D": "After"
+      },
+      "answer": "D",
+      "status": "proposed"
+    },
+    {
+      "number": 116,
+      "page": 3,
+      "col": 1,
+      "y": 163.47799682617188,
+      "text": "Rather than archiving routine e-mails, please delete them -------.",
+      "options": {
+        "A": "especially",
+        "B": "likewise",
+        "C": "quite",
+        "D": "instead"
+      },
+      "answer": "D",
+      "status": "proposed"
+    },
+    {
+      "number": 117,
+      "page": 3,
+      "col": 1,
+      "y": 252.52804565429688,
+      "text": "Mr. Khana made a phone call yesterday during which he ------- for the delay in the shipment of the clothing order.",
+      "options": {
+        "A": "to apologize",
+        "B": "apologized",
+        "C": "apologize",
+        "D": "will be apologizing"
+      },
+      "answer": "B",
+      "status": "proposed"
+    },
+    {
+      "number": 118,
+      "page": 3,
+      "col": 1,
+      "y": 353.30902099609375,
+      "text": "Following many months of research, the marketing team finally decided on a ------- for the new perfume bottle.",
+      "options": {
+        "A": "force",
+        "B": "style",
+        "C": "belief",
+        "D": "request"
+      },
+      "answer": "B",
+      "status": "proposed"
+    },
+    {
+      "number": 119,
+      "page": 3,
+      "col": 1,
+      "y": 454.1090087890625,
+      "text": "For more information about product warranties or ------- your new appliance, please contact customer service.",
+      "options": {
+        "A": "to register",
+        "B": "registered",
+        "C": "registers",
+        "D": "registration"
+      },
+      "answer": "A",
+      "status": "proposed"
+    },
+    {
+      "number": 120,
+      "page": 3,
+      "col": 1,
+      "y": 554.9089965820312,
+      "text": "There will be a software upgrade tomorrow, ------- please back up any important files you have stored on the server.",
+      "options": {
+        "A": "rather",
+        "B": "while",
+        "C": "so",
+        "D": "because"
+      },
+      "answer": "C",
+      "status": "proposed"
+    },
+    {
+      "number": 121,
+      "page": 4,
+      "col": 0,
+      "y": 60.595035552978516,
+      "text": "Ambassador Chaturvedi wrote in his memoir that his parents taught him to do each job well, ------- it was.",
+      "options": {
+        "A": "whoever",
+        "B": "anyone",
+        "C": "everything",
+        "D": "whatever"
+      },
+      "answer": "D",
+      "status": "proposed"
+    },
+    {
+      "number": 122,
+      "page": 4,
+      "col": 0,
+      "y": 161.405029296875,
+      "text": "Yields from your garden will ------- rise as you add Natrium Compost to the soil.",
+      "options": {
+        "A": "steady",
+        "B": "steadying",
+        "C": "steadily",
+        "D": "steadier"
+      },
+      "answer": "C",
+      "status": "proposed"
+    },
+    {
+      "number": 123,
+      "page": 4,
+      "col": 0,
+      "y": 250.43499755859375,
+      "text": "The Tokyo division handles product ------- and customer service for the company.",
+      "options": {
+        "A": "distribute",
+        "B": "distributor",
+        "C": "distribution",
+        "D": "distributed"
+      },
+      "answer": "C",
+      "status": "proposed"
+    },
+    {
+      "number": 124,
+      "page": 4,
+      "col": 0,
+      "y": 339.4850158691406,
+      "text": "Our newest executive assistant will be responsible for ------- between the marketing and accounting departments.",
+      "options": {
+        "A": "coordination",
+        "B": "attention",
+        "C": "appreciation",
+        "D": "consideration"
+      },
+      "answer": "A",
+      "status": "proposed"
+    },
+    {
+      "number": 125,
+      "page": 4,
+      "col": 0,
+      "y": 440.2750244140625,
+      "text": "Hemlin Corporation is looking for a sales representative ------- primary role will be expanding business in the northwest region .",
+      "options": {
+        "A": "that",
+        "B": "whose",
+        "C": "who",
+        "D": "which"
+      },
+      "answer": "B",
+      "status": "proposed"
+    },
+    {
+      "number": 126,
+      "page": 4,
+      "col": 1,
+      "y": 61.008026123046875,
+      "text": "To eliminate ------- inventory of winter outerwear, Ashley Fashions has cut prices on all coats, hats, and scarves.",
+      "options": {
+        "A": "chilly",
+        "B": "adequate",
+        "C": "excess",
+        "D": "revised"
+      },
+      "answer": "C",
+      "status": "proposed"
+    },
+    {
+      "number": 127,
+      "page": 4,
+      "col": 1,
+      "y": 162.03799438476562,
+      "text": "Search the Labesse Financial Web site for the most current and detailed ------- of investment options.",
+      "options": {
+        "A": "explain",
+        "B": "explanation",
+        "C": "to explain",
+        "D": "explainable"
+      },
+      "answer": "B",
+      "status": "proposed"
+    },
+    {
+      "number": 128,
+      "page": 4,
+      "col": 1,
+      "y": 262.8380432128906,
+      "text": "The last paragraph ------- to have been added to the contract as an afterthought.",
+      "options": {
+        "A": "arranged",
+        "B": "permitted",
+        "C": "transferred",
+        "D": "appeared"
+      },
+      "answer": "D",
+      "status": "proposed"
+    },
+    {
+      "number": 129,
+      "page": 4,
+      "col": 1,
+      "y": 351.63800048828125,
+      "text": "Unless the shipment of tiles arrives early, work on the lobby floor ------- after the holiday.",
+      "options": {
+        "A": "has commenced",
+        "B": "commencing",
+        "C": "will commence",
+        "D": "commenced"
+      },
+      "answer": "C",
+      "status": "proposed"
+    },
+    {
+      "number": 130,
+      "page": 4,
+      "col": 1,
+      "y": 452.6780090332031,
+      "text": "Neeson Pro garments are made of a synthetic blend that is ------- to staining.",
+      "options": {
+        "A": "exposed",
+        "B": "automatic",
+        "C": "limited",
+        "D": "vulnerable"
+      },
+      "answer": "D",
+      "status": "proposed"
+    },
+    {
+      "number": 131,
+      "page": 5,
+      "col": 0,
+      "y": 431.64501953125,
+      "text": "131",
+      "options": {
+        "A": "suggest",
+        "B": "perform",
+        "C": "cancel",
+        "D": "revise"
+      },
+      "answer": "B",
+      "status": "proposed"
+    },
+    {
+      "number": 132,
+      "page": 5,
+      "col": 0,
+      "y": 492.3750305175781,
+      "text": "132",
+      "options": {
+        "A": "The updates will be e-mailed to all employees.",
+        "B": "Please reply if you would like to participate.",
+        "C": "The process will begin tomorrow evening.",
+        "D": "A memo will be distributed indicating the start time."
+      },
+      "answer": "C",
+      "status": "proposed"
+    },
+    {
+      "number": 133,
+      "page": 5,
+      "col": 1,
+      "y": 431.8850402832031,
+      "text": "133",
+      "options": {
+        "A": "During",
+        "B": "Now",
+        "C": "When",
+        "D": "Finally"
+      },
+      "answer": "A",
+      "status": "proposed"
+    },
+    {
+      "number": 134,
+      "page": 5,
+      "col": 1,
+      "y": 492.60504150390625,
+      "text": "134",
+      "options": {
+        "A": "regret",
+        "B": "regretting",
+        "C": "regrettable",
+        "D": "regrettably"
+      },
+      "answer": "A",
+      "status": "proposed"
+    },
+    {
+      "number": 135,
+      "page": 6,
+      "col": 0,
+      "y": 536.677978515625,
+      "text": "135",
+      "options": {
+        "A": "speeches",
+        "B": "shops",
+        "C": "visits",
+        "D": "efforts"
+      },
+      "answer": "D",
+      "status": "proposed"
+    },
+    {
+      "number": 136,
+      "page": 6,
+      "col": 0,
+      "y": 597.4080200195312,
+      "text": "136",
+      "options": {
+        "A": "Such work deserves recognition .",
+        "B": "Please meet with your assistant.",
+        "C": "It was shipped about a week ago.",
+        "D": "I will be in Belgium next month."
+      },
+      "answer": "A",
+      "status": "proposed"
+    },
+    {
+      "number": 137,
+      "page": 6,
+      "col": 0,
+      "y": 658.1279907226562,
+      "text": "137",
+      "options": {
+        "A": "was based",
+        "B": "is based",
+        "C": "basing",
+        "D": "bases"
+      },
+      "answer": "B",
+      "status": "proposed"
+    },
+    {
+      "number": 138,
+      "page": 6,
+      "col": 1,
+      "y": 536.677978515625,
+      "text": "138",
+      "options": {
+        "A": "In addition",
+        "B": "For instance",
+        "C": "However",
+        "D": "Similarly"
+      },
+      "answer": "C",
+      "status": "proposed"
+    },
+    {
+      "number": 139,
+      "page": 7,
+      "col": 0,
+      "y": 460.3580322265625,
+      "text": "139",
+      "options": {
+        "A": "retired",
+        "B": "will be retiring",
+        "C": "would retire",
+        "D": "was to retire"
+      },
+      "answer": "B",
+      "status": "proposed"
+    },
+    {
+      "number": 140,
+      "page": 7,
+      "col": 0,
+      "y": 521.0780029296875,
+      "text": "140",
+      "options": {
+        "A": "You will soon receive a formal invitation.",
+        "B": "The event will take place in the staff room.",
+        "C": "He certainly achieved his goal.",
+        "D": "There, he graduated with academic distinction."
+      },
+      "answer": "C",
+      "status": "proposed"
+    },
+    {
+      "number": 141,
+      "page": 7,
+      "col": 1,
+      "y": 460.6080322265625,
+      "text": "141",
+      "options": {
+        "A": "succeeded",
+        "B": "achieved",
+        "C": "accomplished",
+        "D": "resolved"
+      },
+      "answer": "A",
+      "status": "proposed"
+    },
+    {
+      "number": 142,
+      "page": 7,
+      "col": 1,
+      "y": 521.3280029296875,
+      "text": "142",
+      "options": {
+        "A": "promising",
+        "B": "technical",
+        "C": "foremost",
+        "D": "distinguished"
+      },
+      "answer": "D",
+      "status": "proposed"
+    },
+    {
+      "number": 143,
+      "page": 8,
+      "col": 0,
+      "y": 345.4749755859375,
+      "text": "143",
+      "options": {
+        "A": "spend",
+        "B": "spends",
+        "C": "spender",
+        "D": "spending"
+      },
+      "answer": "D",
+      "status": "proposed"
+    },
+    {
+      "number": 144,
+      "page": 8,
+      "col": 0,
+      "y": 405.9549560546875,
+      "text": "144",
+      "options": {
+        "A": "instituted",
+        "B": "examined",
+        "C": "purchased",
+        "D": "overturned"
+      },
+      "answer": "A",
+      "status": "proposed"
+    },
+    {
+      "number": 145,
+      "page": 8,
+      "col": 0,
+      "y": 466.6749572753906,
+      "text": "145",
+      "options": {
+        "A": "The accounting office will be closed for renovations next week.",
+        "B": "Travel is important for maintaining relationships with clients.",
+        "C": "The officers periodically review and revise key company policies.",
+        "D": "Requests for international travel must be sent at least one month in advance."
+      },
+      "answer": "D",
+      "status": "proposed"
+    },
+    {
+      "number": 146,
+      "page": 8,
+      "col": 1,
+      "y": 345.4749755859375,
+      "text": "146",
+      "options": {
+        "A": "Any",
+        "B": "Additional",
+        "C": "Previous",
+        "D": "These"
+      },
+      "answer": "A",
+      "status": "proposed"
+    },
+    {
+      "number": 147,
+      "page": 9,
+      "col": 0,
+      "y": 550.6849975585938,
+      "text": "What type of business most likely provided the receipt?",
+      "options": {
+        "A": "A caterer",
+        "B": "A vegetable market",
+        "C": "A cafe",
+        "D": "An online retailer"
+      },
+      "answer": "C",
+      "status": "proposed"
+    },
+    {
+      "number": 148,
+      "page": 9,
+      "col": 1,
+      "y": 551.155029296875,
+      "text": "How much money can survey participants save?",
+      "options": {
+        "A": "$2.25",
+        "B": "$2.75",
+        "C": "$4.00",
+        "D": "$9.00"
+      },
+      "answer": "A",
+      "status": "proposed"
+    },
+    {
+      "number": 149,
+      "page": 10,
+      "col": 0,
+      "y": 344.8409729003906,
+      "text": "For whom is the advertisement most likely intended?",
+      "options": {
+        "A": "Beginning gardeners",
+        "B": "Landscape designers",
+        "C": "Plant store owners",
+        "D": "Magazine publishers"
+      },
+      "answer": "A",
+      "status": "proposed"
+    },
+    {
+      "number": 150,
+      "page": 10,
+      "col": 1,
+      "y": 345.08099365234375,
+      "text": "According to the advertisement, what does the magazine feature?",
+      "options": {
+        "A": "Product advertisements",
+        "B": "Gardening tips from readers",
+        "C": "Articles by gardening professionals",
+        "D": "Botanical artwork"
+      },
+      "answer": "C",
+      "status": "proposed"
+    },
+    {
+      "number": 151,
+      "page": 11,
+      "col": 0,
+      "y": 427.9579772949219,
+      "text": "Who most likely is Mr. Alamilla?",
+      "options": {
+        "A": "An administrative assistant",
+        "B": "A graphic designer",
+        "C": "An accountant",
+        "D": "A store manager"
+      },
+      "answer": "B",
+      "status": "proposed"
+    },
+    {
+      "number": 152,
+      "page": 11,
+      "col": 1,
+      "y": 428.197998046875,
+      "text": "What is indicated about the sample?",
+      "options": {
+        "A": "It will include an image.",
+        "B": "It will be larger than its final version.",
+        "C": "It will be printed with green ink.",
+        "D": "It will require Ms. Kensington's approval."
+      },
+      "answer": "A",
+      "status": "proposed"
+    },
+    {
+      "number": 153,
+      "page": 12,
+      "col": 0,
+      "y": 342.7680358886719,
+      "text": "Why does Mr. Jeffers write to Ms. Park?",
+      "options": {
+        "A": "To schedule a meeting",
+        "B": "To find out whether she can work late",
+        "C": "To ask about staff availability",
+        "D": "To postpone an upcoming event"
+      },
+      "answer": "C",
+      "status": "proposed"
+    },
+    {
+      "number": 154,
+      "page": 12,
+      "col": 1,
+      "y": 342.7680358886719,
+      "text": "At 5:41 P.M., what does Ms. Park most likely mean when she writes, \"Oh no\"?",
+      "options": {
+        "A": "She did not set up the conference room .",
+        "B": "She cannot find Ms. Grant's phone number.",
+        "C": "She is unable to attend an executive meeting.",
+        "D": "She is concerned about a maintenance issue."
+      },
+      "answer": "D",
+      "status": "proposed"
+    },
+    {
+      "number": 155,
+      "page": 13,
+      "col": 0,
+      "y": 432.843994140625,
+      "text": "Who most likely is Mr. Wei?",
+      "options": {
+        "A": "A tailor",
+        "B": "A designer",
+        "C": "A salesperson",
+        "D": "A business owner"
+      },
+      "answer": "C",
+      "status": "proposed"
+    },
+    {
+      "number": 156,
+      "page": 13,
+      "col": 0,
+      "y": 509.6401672363281,
+      "text": "Where does the item not fit Mr. Sawyer correctly?",
+      "options": {
+        "A": "On his legs",
+        "B": "On his arms",
+        "C": "Around his neck",
+        "D": "Around his waist"
+      },
+      "answer": "B",
+      "status": "proposed"
+    },
+    {
+      "number": 157,
+      "page": 13,
+      "col": 1,
+      "y": 433.093994140625,
+      "text": "Why will the alterations be free?",
+      "options": {
+        "A": "A coupon was redeemed.",
+        "B": "The item was purchased online.",
+        "C": "The item was sold with a defect.",
+        "D": "A staff member made a mistake."
+      },
+      "answer": "D",
+      "status": "proposed"
+    },
+    {
+      "number": 158,
+      "page": 14,
+      "col": 0,
+      "y": 327.0810241699219,
+      "text": "What is implied about Vivi's Tech Fix?",
+      "options": {
+        "A": "It has multiple stores.",
+        "B": "It was recently established.",
+        "C": "It repairs mobile phones only.",
+        "D": "It accepts payment by credit card only."
+      },
+      "answer": "A",
+      "status": "proposed"
+    },
+    {
+      "number": 159,
+      "page": 14,
+      "col": 0,
+      "y": 403.8910217285156,
+      "text": "When did Ms. Pradhan pick up her mobile phone?",
+      "options": {
+        "A": "On Tuesday",
+        "B": "On Wednesday",
+        "C": "On Thursday",
+        "D": "On Friday"
+      },
+      "answer": "C",
+      "status": "proposed"
+    },
+    {
+      "number": 160,
+      "page": 14,
+      "col": 1,
+      "y": 327.3310241699219,
+      "text": "In paragraph 2, line 5, the word \"beyond\" is closest in meaning to",
+      "options": {
+        "A": "superior to",
+        "B": "very costly to",
+        "C": "in immediate need of",
+        "D": "outside the reach of"
+      },
+      "answer": "D",
+      "status": "proposed"
+    },
+    {
+      "number": 161,
+      "page": 15,
+      "col": 0,
+      "y": 346.2809753417969,
+      "text": "What does the memo explain?",
+      "options": {
+        "A": "How passwords should be changed",
+        "B": "How to apply for new e-mail accounts",
+        "C": "Why staff have received so many voice messages",
+        "D": "Why staff have had difficulty accessing e-mails"
+      },
+      "answer": "D",
+      "status": "proposed"
+    },
+    {
+      "number": 162,
+      "page": 15,
+      "col": 0,
+      "y": 447.08099365234375,
+      "text": "What are employees asked to do?",
+      "options": {
+        "A": "Contact the help desk",
+        "B": "Post messages on a board",
+        "C": "Update their user information",
+        "D": "Wait for further announcements"
+      },
+      "answer": "D",
+      "status": "proposed"
+    },
+    {
+      "number": 163,
+      "page": 15,
+      "col": 1,
+      "y": 346.2809753417969,
+      "text": "In which of the positions marked [1]. [2]. [3], and [4] does the following sentence best belong? \"Unfortunately, it is unclear when that will happen.\"",
+      "options": {
+        "A": "[1]",
+        "B": "[2]",
+        "C": "[3]",
+        "D": "[4]"
+      },
+      "answer": "C",
+      "status": "proposed"
+    },
+    {
+      "number": 164,
+      "page": 17,
+      "col": 0,
+      "y": 61.89098358154297,
+      "text": "Why did Mr. Amison send the e-mail to Ms. Gonzalez?",
+      "options": {
+        "A": "Because she has a history of helping the library",
+        "B": "Because she is overseeing a new project",
+        "C": "Because she wrote a book about the town of Danton",
+        "D": "Because she is a frequent user of the library's computers"
+      },
+      "answer": "A",
+      "status": "proposed"
+    },
+    {
+      "number": 165,
+      "page": 17,
+      "col": 0,
+      "y": 198.92095947265625,
+      "text": "What is most likely true about Ms. Gonzalez?",
+      "options": {
+        "A": "She is a retired librarian.",
+        "B": "She has applied for a job at the library.",
+        "C": "She owns a book scanner.",
+        "D": "She is a resident of Danton."
+      },
+      "answer": "D",
+      "status": "proposed"
+    },
+    {
+      "number": 166,
+      "page": 17,
+      "col": 0,
+      "y": 287.7309875488281,
+      "text": "What current project is the Danton Public Library trying to complete?",
+      "options": {
+        "A": "Purchasing new books",
+        "B": "Replacing old computers",
+        "C": "Transferring books to electronic format",
+        "D": "Reorganizing the nonfiction section"
+      },
+      "answer": "C",
+      "status": "proposed"
+    },
+    {
+      "number": 167,
+      "page": 17,
+      "col": 1,
+      "y": 61.40099334716797,
+      "text": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong? \"It will require both financial resources from dedicated patrons and additional staff hours.\"",
+      "options": {
+        "A": "[1]",
+        "B": "[2]",
+        "C": "[3]",
+        "D": "[4]"
+      },
+      "answer": "B",
+      "status": "proposed"
+    },
+    {
+      "number": 168,
+      "page": 19,
+      "col": 0,
+      "y": 63.407989501953125,
+      "text": "What is true about Ms. Okura?",
+      "options": {
+        "A": "She publishes novels.",
+        "B": "She owns a business.",
+        "C": "She has previously met Ms. Lette.",
+        "D": "She has helped organize conferences."
+      },
+      "answer": "B",
+      "status": "proposed"
+    },
+    {
+      "number": 169,
+      "page": 19,
+      "col": 0,
+      "y": 140.43795776367188,
+      "text": "What is indicated about the conference?",
+      "options": {
+        "A": "It will take place in London.",
+        "B": "It has more than one sponsor.",
+        "C": "It is being held for the first time.",
+        "D": "It will offer discounted rates until Friday."
+      },
+      "answer": "B",
+      "status": "proposed"
+    },
+    {
+      "number": 170,
+      "page": 19,
+      "col": 0,
+      "y": 217.23800659179688,
+      "text": "At 10:28 A.M., what does Ms. Jacinto mean when she writes, \"That sounds good\"?",
+      "options": {
+        "A": "She is pleased with the proposed conference site.",
+        "B": "She thinks the cost of the hotel is reasonable.",
+        "C": "She wants to join Mr. Rufo at the buffet.",
+        "D": "She prefers the Rowtown Hotel."
+      },
+      "answer": "A",
+      "status": "proposed"
+    },
+    {
+      "number": 171,
+      "page": 19,
+      "col": 1,
+      "y": 63.407989501953125,
+      "text": "Who most likely is Ms. Lette?",
+      "options": {
+        "A": "An event planner",
+        "B": "A travel agent",
+        "C": "An author",
+        "D": "A bookseller"
+      },
+      "answer": "C",
+      "status": "proposed"
+    },
+    {
+      "number": 172,
+      "page": 21,
+      "col": 0,
+      "y": 62.917999267578125,
+      "text": "What is the purpose of the article?",
+      "options": {
+        "A": "To inform staff about sales targets",
+        "B": "To give notice of an employee's promotion",
+        "C": "To outline this year's marketing strategy",
+        "D": "To announce that an employee has received an award"
+      },
+      "answer": "B",
+      "status": "proposed"
+    },
+    {
+      "number": 173,
+      "page": 21,
+      "col": 0,
+      "y": 163.4099884033203,
+      "text": "What does the article indicate about Ms. Portalska?",
+      "options": {
+        "A": "She is popular.",
+        "B": "She works hard.",
+        "C": "She is innovative.",
+        "D": "She lacks experience."
+      },
+      "answer": "B",
+      "status": "proposed"
+    },
+    {
+      "number": 174,
+      "page": 21,
+      "col": 0,
+      "y": 252.4500274658203,
+      "text": "The word \"outstanding\" in paragraph 2, line 5, is closest in meaning to",
+      "options": {
+        "A": "pending",
+        "B": "complete",
+        "C": "remarkable",
+        "D": "unexpected"
+      },
+      "answer": "C",
+      "status": "proposed"
+    },
+    {
+      "number": 175,
+      "page": 21,
+      "col": 1,
+      "y": 62.6099967956543,
+      "text": "What is indicated about this year's final sales figures?",
+      "options": {
+        "A": "They were better than anticipated.",
+        "B": "They were the same as last year's figures.",
+        "C": "They were discussed at a recent staff meeting.",
+        "D": "They were announced at a ceremony on Friday."
+      },
+      "answer": "A",
+      "status": "proposed"
+    },
+    {
+      "number": 176,
+      "page": 23,
+      "col": 0,
+      "y": 62.034976959228516,
+      "text": "What is true about Ms. Martin?",
+      "options": {
+        "A": "She is from Canada.",
+        "B": "She is flying with a group.",
+        "C": "She is taking a business trip.",
+        "D": "She is a Quail Travel Card member."
+      },
+      "answer": "D",
+      "status": "proposed"
+    },
+    {
+      "number": 177,
+      "page": 23,
+      "col": 0,
+      "y": 139.07501220703125,
+      "text": "How much must Ms. Martin pay for her bags?",
+      "options": {
+        "A": "$0.00",
+        "B": "$30.00",
+        "C": "$60.00",
+        "D": "$90.00"
+      },
+      "answer": "A",
+      "status": "proposed"
+    },
+    {
+      "number": 178,
+      "page": 23,
+      "col": 0,
+      "y": 228.125,
+      "text": "Why was the text message sent to Ms. Martin?",
+      "options": {
+        "A": "To confirm her ticket purchase",
+        "B": "To notify her of a price increase",
+        "C": "To inform her of a time change",
+        "D": "To tell her what departure gate to use"
+      },
+      "answer": "C",
+      "status": "proposed"
+    },
+    {
+      "number": 179,
+      "page": 23,
+      "col": 1,
+      "y": 62.274967193603516,
+      "text": "What can Ms. Martin receive on April 10 ?",
+      "options": {
+        "A": "A free travel bag",
+        "B": "A free snack",
+        "C": "A free seat upgrade",
+        "D": "A free flight reassignment"
+      },
+      "answer": "B",
+      "status": "proposed"
+    },
+    {
+      "number": 180,
+      "page": 23,
+      "col": 1,
+      "y": 139.32501220703125,
+      "text": "In the text message, the word \"poor\" in paragraph 1, line 3, is closest in meaning to",
+      "options": {
+        "A": "bad",
+        "B": "weak",
+        "C": "little",
+        "D": "thick"
+      },
+      "answer": "A",
+      "status": "proposed"
+    },
+    {
+      "number": 181,
+      "page": 25,
+      "col": 0,
+      "y": 62.044986724853516,
+      "text": "When did the banquet organized by Nortrax Petroleum take place?",
+      "options": {
+        "A": "On July 24",
+        "B": "On July 25",
+        "C": "On July 27",
+        "D": "On July 28"
+      },
+      "answer": "B",
+      "status": "proposed"
+    },
+    {
+      "number": 182,
+      "page": 25,
+      "col": 0,
+      "y": 150.83148193359375,
+      "text": "What is NOT true about the flowers mentioned by Ms. Nair?",
+      "options": {
+        "A": "Their condition was unacceptable.",
+        "B": "They were the wrong kind.",
+        "C": "They were too expensive.",
+        "D": "They were delivered late."
+      },
+      "answer": "C",
+      "status": "proposed"
+    },
+    {
+      "number": 183,
+      "page": 25,
+      "col": 0,
+      "y": 239.63494873046875,
+      "text": "What is suggested about Ms. Nair?",
+      "options": {
+        "A": "She works for an event-planning company.",
+        "B": "She would like to have flowers delivered monthly.",
+        "C": "She ordered more flower arrangements than she needed.",
+        "D": "She has done business with Xanthus Flowers in the past."
+      },
+      "answer": "D",
+      "status": "proposed"
+    },
+    {
+      "number": 184,
+      "page": 25,
+      "col": 1,
+      "y": 62.273990631103516,
+      "text": "What does Mr. McCabe offer that Ms. Nair was not expecting?",
+      "options": {
+        "A": "A discount on a future order",
+        "B": "Free delivery for all future purchases",
+        "C": "A refund for the entire cost of an order",
+        "D": "New flowers to replace some unsatisfactory ones"
+      },
+      "answer": "A",
+      "status": "proposed"
+    },
+    {
+      "number": 185,
+      "page": 25,
+      "col": 1,
+      "y": 163.07196044921875,
+      "text": "What is mentioned about Xanthus Flowers?",
+      "options": {
+        "A": "It is known for its fast service.",
+        "B": "It is operating from a new location.",
+        "C": "It recently purchased delivery vehicles.",
+        "D": "It plans to expand its selection of flowers."
+      },
+      "answer": "B",
+      "status": "proposed"
+    },
+    {
+      "number": 186,
+      "page": 27,
+      "col": 0,
+      "y": 392.9280090332031,
+      "text": "What is indicated about Singh Supplies?",
+      "options": {
+        "A": "It is a relatively new business.",
+        "B": "It is operated by members of a family.",
+        "C": "It ships its products all over the world.",
+        "D": "It manufactures the products that it sells."
+      },
+      "answer": "B",
+      "status": "proposed"
+    },
+    {
+      "number": 187,
+      "page": 27,
+      "col": 0,
+      "y": 481.4779968261719,
+      "text": "Which aspect of business does the Web page emphasize?",
+      "options": {
+        "A": "Attentive service to clients",
+        "B": "A wide selection of products",
+        "C": "Partnerships with other companies",
+        "D": "Conveniently located retail locations"
+      },
+      "answer": "A",
+      "status": "proposed"
+    },
+    {
+      "number": 188,
+      "page": 27,
+      "col": 0,
+      "y": 570.2779541015625,
+      "text": "In the e-mail, what does Ms. Mayo praise about Singh Supplies?",
+      "options": {
+        "A": "It is easy to contact.",
+        "B": "It packs items securely.",
+        "C": "It delivers orders quickly.",
+        "D": "It sends product samples."
+      },
+      "answer": "C",
+      "status": "proposed"
+    },
+    {
+      "number": 189,
+      "page": 27,
+      "col": 1,
+      "y": 393.1579895019531,
+      "text": "Which product does Ms. Mayo want to return?",
+      "options": {
+        "A": "MB 01257",
+        "B": "MB 01268",
+        "C": "TR 01345",
+        "D": "BW 01456"
+      },
+      "answer": "B",
+      "status": "proposed"
+    },
+    {
+      "number": 190,
+      "page": 27,
+      "col": 1,
+      "y": 481.9580078125,
+      "text": "How will Mr. Singh most likely respond to Ms. Kim's request?",
+      "options": {
+        "A": "By sending Ms. Mayo additional items",
+        "B": "By apologizing to Ms. Kim for an error",
+        "C": "By issuing a credit to Montjoy Antiques",
+        "D": "By giving Montjoy Antiques a full refund"
+      },
+      "answer": "C",
+      "status": "proposed"
+    },
+    {
+      "number": 191,
+      "page": 29,
+      "col": 0,
+      "y": 271.2480163574219,
+      "text": "What is the purpose of the article?",
+      "options": {
+        "A": "To advertise a local business",
+        "B": "To discuss the local economy",
+        "C": "To promote an upcoming event",
+        "D": "To profile a new shopping market"
+      },
+      "answer": "C",
+      "status": "proposed"
+    },
+    {
+      "number": 192,
+      "page": 29,
+      "col": 0,
+      "y": 348.0379943847656,
+      "text": "What does Ms. Tolley encourage people to do?",
+      "options": {
+        "A": "Visit her Web site",
+        "B": "Read her book",
+        "C": "Grow their own produce",
+        "D": "Shop at farmers' markets"
+      },
+      "answer": "D",
+      "status": "proposed"
+    },
+    {
+      "number": 193,
+      "page": 29,
+      "col": 0,
+      "y": 436.6080017089844,
+      "text": "What is indicated about Mr. Hernandez?",
+      "options": {
+        "A": "He is a friend of Ms. Tolley's.",
+        "B": "He organized Ms. Tolley's talk.",
+        "C": "He has visited Ms. Tolley's business.",
+        "D": "He is selling tickets to Ms. Tolley's talk."
+      },
+      "answer": "C",
+      "status": "proposed"
+    },
+    {
+      "number": 194,
+      "page": 29,
+      "col": 1,
+      "y": 271.2480163574219,
+      "text": "What featured article will help readers grow a garden inside their home?",
+      "options": {
+        "A": "Local Made Good",
+        "B": "Herbs All Year",
+        "C": "Vegan Delicious",
+        "D": "Amazing August"
+      },
+      "answer": "B",
+      "status": "proposed"
+    },
+    {
+      "number": 195,
+      "page": 29,
+      "col": 1,
+      "y": 360.0379943847656,
+      "text": "Who most likely attended Ms. Tolley's talk?",
+      "options": {
+        "A": "Mr. Newton",
+        "B": "Ms. Young",
+        "C": "Mr. Davis",
+        "D": "Ms. Park"
+      },
+      "answer": "A",
+      "status": "proposed"
+    },
+    {
+      "number": 196,
+      "page": 31,
+      "col": 0,
+      "y": 337.1709899902344,
+      "text": "Why most likely did Mr. Carelli receive the postcard?",
+      "options": {
+        "A": "He frequently reserves rooms at Madera Hotels.",
+        "B": "He rented a vehicle in May.",
+        "C": "He last visited a Madera Hotel in New York.",
+        "D": "He enjoys eating in hotel restaurants."
+      },
+      "answer": "A",
+      "status": "proposed"
+    },
+    {
+      "number": 197,
+      "page": 31,
+      "col": 0,
+      "y": 449.7209777832031,
+      "text": "What is likely true about Mr. Carelli's hotel stay?",
+      "options": {
+        "A": "It was for a conference.",
+        "B": "It included a spa visit.",
+        "C": "It was at least three nights long.",
+        "D": "It was paid for in advance."
+      },
+      "answer": "C",
+      "status": "proposed"
+    },
+    {
+      "number": 198,
+      "page": 31,
+      "col": 0,
+      "y": 538.281005859375,
+      "text": "According to the form, when did Mr. Carelli report an issue with his account?",
+      "options": {
+        "A": "On April 1",
+        "B": "On May 12",
+        "C": "On June 30",
+        "D": "On July 14"
+      },
+      "answer": "D",
+      "status": "proposed"
+    },
+    {
+      "number": 199,
+      "page": 31,
+      "col": 1,
+      "y": 337.6409912109375,
+      "text": "What special April reward did Mr. Carelli mistakenly receive?",
+      "options": {
+        "A": "One",
+        "B": "Two",
+        "C": "Three",
+        "D": "Four"
+      },
+      "answer": "B",
+      "status": "proposed"
+    },
+    {
+      "number": 200,
+      "page": 31,
+      "col": 1,
+      "y": 426.21099853515625,
+      "text": "What does Mr. Beltran offer to do?",
+      "options": {
+        "A": "Upgrade a membership",
+        "B": "Change a reservation",
+        "C": "Give additional bonus points",
+        "D": "Schedule a business conference"
+      },
+      "answer": "C",
+      "status": "proposed"
+    }
+  ],
+  "groups": [
+    {
+      "key": "g131-134",
+      "first": 131,
+      "last": 134,
+      "documents": [
+        {
+          "page": 5,
+          "crop": [
+            40,
+            195,
+            515,
+            410
+          ],
+          "text": "To: All Employees\nSubject: Server Maintenance Reminder\nDate: March 11\n\nPlease be advised it is time for the IT department to {{131}} mandatory server maintenance and updates. {{132}}. There will be no Internet service in the building from 7:00 P.M. Wednesday, March 12, until 9:00 A.M. Thursday, March 13. In addition, please note there will be no remote access available. Therefore, you will not be able to log in to the server from outside the office.\n\n{{133}} this regularly scheduled maintenance, you will not have access to your e-mail, calendar, or contacts. Employees should plan accordingly. We {{134}} any inconvenience this may cause.",
+          "image": "docs/reading-assets/g131-doc1.png"
+        }
+      ]
+    },
+    {
+      "key": "g135-138",
+      "first": 135,
+      "last": 138,
+      "documents": [
+        {
+          "page": 6,
+          "crop": [
+            40,
+            85,
+            515,
+            514
+          ],
+          "text": "22 April\n\nMs. Anna Schoorl\nRodezand 334\n3011 AV Rotterdam\nNetherlands\n\nDear Ms. Schoorl,\n\nCongratulations on your remarkable {{135}} in the Netherlands, Belgium, and Luxembourg. Your region has improved its on-time delivery performance for each of the past seven quarters. {{136}}.\n\nI am pleased to offer you a promotion to Director of European Operations. The position {{137}} in Hamburg, Germany. I realize that relocating may be difficult for you. {{138}}, I certainly hope that you will take time to consider this opportunity. Please call me at your earliest convenience so that we can discuss any concerns you may have.\n\nThank you for being a part of the Unocity Shipping family.\n\nSincerely,\nXia Hsu, Director of Operations\nUnocity Shipping, Inc.",
+          "image": "docs/reading-assets/g135-doc1.png"
+        }
+      ]
+    },
+    {
+      "key": "g139-142",
+      "first": 139,
+      "last": 142,
+      "documents": [
+        {
+          "page": 7,
+          "crop": [
+            40,
+            85,
+            515,
+            435
+          ],
+          "text": "To: Wu Investment Services employees\nFrom: Eileen Suen, Office Manager\nRe: Jacob Wu\nDate: 15 August\n\nTo All Staff,\n\nAs many of you are aware, Jacob Wu, our long-standing Chief Executive Officer, {{139}} on 1 October. Twenty years ago, Mr. Wu set out to create a Hong Kong-based services firm with an international scope. {{140}}. Wu Investment Services currently serves clients in seventeen countries, 95 percent of whom have chosen to invest with us for the long term.\n\nMr. Wu will be {{141}} by Thomas Wu, his son, who has served as Vice President of Wu Investment Services for the past four years.\n\nA gathering will be held on 28 September to celebrate Mr. Wu's {{142}} career. I will send further information about the event closer to the date. Thank you.\n\nEileen",
+          "image": "docs/reading-assets/g139-doc1.png"
+        }
+      ]
+    },
+    {
+      "key": "g143-146",
+      "first": 143,
+      "last": 146,
+      "documents": [
+        {
+          "page": 8,
+          "crop": [
+            40,
+            85,
+            515,
+            324
+          ],
+          "text": "From: Madeleine DeVries, Director of Operations\nTo: All Employees\nDate: June 1\nRe: Travel Policy\n\nTo help reduce {{143}}, the officers have voted to change the company's travel policy. The revised policy will be {{144}} on June 15. From that point forward, employees traveling within the country will be required to submit their travel requests to the accounting office no later than three weeks before the date of departure. {{145}}.\n\n{{146}} exceptions to this policy will be decided on a case-by-case basis and must first be approved by the individual employee's supervisor.",
+          "image": "docs/reading-assets/g143-doc1.png"
+        }
+      ]
+    },
+    {
+      "key": "g147-148",
+      "first": 147,
+      "last": 148,
+      "documents": [
+        {
+          "page": 9,
+          "crop": [
+            40,
+            194,
+            515,
+            538.6849975585938
+          ],
+          "text": "Siobhan 's Toronto, Ontario\n\n  April 14     09:23 a.m.   Dine-in\n  Order: 55234              Server: Antonio K.\n\n  1 Medium Coffee $2.25\n  No sugar\n  No milk\n\n  1 Large Coffee   $2.75\n  3 sugars\n  No milk\n\n  2 Croissants      $4.00\n\n  Subtotal         $9.00\n  HST 13%         $1.17\n  Total           $10.17\n*********************************************\nTell us how we did today and get a free medium coffee!\nJust fill out our online survey at www.siobhans.ca/survey.\nYou will be given a code to receive a free medium coffee\nwhen you buy any regular-priced pastry.",
+          "image": "docs/reading-assets/g147-doc1.png"
+        }
+      ]
+    },
+    {
+      "key": "g149-150",
+      "first": 149,
+      "last": 150,
+      "documents": [
+        {
+          "page": 10,
+          "crop": [
+            40,
+            80,
+            515,
+            332.8409729003906
+          ],
+          "text": "Country (jardening T'oday\n\n\nGrowing plants can be easy. It just takes knowing the right tips and tricks.\nThat's why our award-winning Country Gardening Today is the most widely\nread gardening magazine in all of New Zealand. Most of our readers say they\nhad never planted a single seed before ordering our magazine, and now they\ntake pride in their beautiful flowers and scrumptious vegetables. Our articles\ncover every aspect of gardening, and they are written by expert landscape\ndesigners, horticulturalists, and botanists. This fun and practical magazine\nalso offers do-it-yourself landscaping ideas, product recommendations\n(no ads!), and step-by-step guides. Don't miss this spectacular offer!\nSubscribe before the end of February and save 25% off the retail\ncover price! Just go to www.countrygardeningtoday.com.",
+          "image": "docs/reading-assets/g149-doc1.png"
+        }
+      ]
+    },
+    {
+      "key": "g151-152",
+      "first": 151,
+      "last": 152,
+      "documents": [
+        {
+          "page": 11,
+          "crop": [
+            40,
+            82,
+            515,
+            415.9579772949219
+          ],
+          "text": "Pedro AlamillaI To:        I                                                          I\n         Emma GoldingI From:        I                                                              I\n             16 AprilI Date:        I                                                              I\nI Subject:    Labels        I                                                              I\n\n  Dear Pedro,\n\n  Per your request, below is the text for the labels for the new \"Think Green Paper\"\n   line. The labels will be placed on the edge of the packaged reams of paper, so\n   their size should not exceed 3 em by 8 em. The design should include the tree\n  graphic we discussed yesterday. The text should read as follows:\n\n                • Think Green Paper\n                • 100% from recycled products\n                • 90 g/m2 bond\n                • Bright white\n\n  Please create a true-to-size and true-to-color sample version of the label by\n  Wednesday, 21 April, and send it to the attention of my assistant, Dora Kensington.\n   I will be out of the office on Wednesday, but I will review the sample and approve it\n  as soon as I am back in the office on Thursday morning.\n\n Emma\n                                                                                               ITl",
+          "image": "docs/reading-assets/g151-doc1.png"
+        }
+      ]
+    },
+    {
+      "key": "g153-154",
+      "first": 153,
+      "last": 154,
+      "documents": [
+        {
+          "page": 12,
+          "crop": [
+            40,
+            85,
+            515,
+            330.7680358886719
+          ],
+          "text": "Cl X                                     -                                                                                                                                                                                                           ...                                                                                                                                                     -\nArtie Jeffers [5:40P.M.]\nSun Jung, the overhead lights in the conference room are blinking oddly. I called\nthe maintenance hotline, but no one answered. Is anyone from maintenance still\nin for the day?\n\nSun Jung Park [5:41P.M.]\nOh no! We have a meeting there in 20 minutes with the Larkspur executives. Try\nsending a message to Patty Grant. She is the head of maintenance and usually\nworks late.\n\nArtie Jeffers [5:45 P.M.]\nGood news! Patty has already responded. A crew is on the way now to address the\nproblem.\n                                                                                                                                                                               -...",
+          "image": "docs/reading-assets/g153-doc1.png"
+        }
+      ]
+    },
+    {
+      "key": "g155-157",
+      "first": 155,
+      "last": 157,
+      "documents": [
+        {
+          "page": 13,
+          "crop": [
+            40,
+            79,
+            515,
+            420.843994140625
+          ],
+          "text": "(Bill Gallardo's Suit0\n\nItem details\nPurchaser:   Richard Sawyer\nGarment:   #PC36 (navy/wool)\nPrice:      $89.99   Tax: $5.40\nAlteration:   no charge (see remarks)\nSold By:            \"\"'La=r_,_r.,_y.....W....,e=i ____ _\nAssigned to:  Florian Gartner\n\nAlterations\nJacket                 Pants\nCollar:                 Waist:\nSleeves: shorten       Length:\nShoulders:             Thigh:\nLength:               Knee:\nWaist:              Hem:\n\nRemarks\nclerical error during initial measurement",
+          "image": "docs/reading-assets/g155-doc1.png"
+        }
+      ]
+    },
+    {
+      "key": "g158-160",
+      "first": 158,
+      "last": 160,
+      "documents": [
+        {
+          "page": 14,
+          "crop": [
+            40,
+            81,
+            515,
+            315.0810241699219
+          ],
+          "text": "Posted by Padma Pradhan on Friday, September 23, at 12:34 P.M.                   1-•\n\nI took my mobile phone to the Vivi's Tech F.L\" location on Rivas Boulevard and 23rd Street\nfor help with a cracked screen. I dropped off the phone on a Tuesday afternoon, and by\n\\'\\lednesday morning I had received a quote by e-mail letting me know the cost to fL'{ it. I\ncalled to accept the quote and give my credit card number, and I was able to pick up the\nmobile the next day on my way home from work-  as good as new. If you are looking for\nresponsible professionals, Vivi's Tech Fix is the right place.\n\n\\'\\lhile I was in the store picking up my mobile, another customer came in. She was also\npicking up a damaged mobile; however, the technicians had informed her that the device\ncould not be fixed because of severe water damage, so she owed them nothing. I was\nimpressed that customers can get a free diagnostic from the technicians and don't need\nto pay anything if a device is beyond repair.\n                                                                               -•",
+          "image": "docs/reading-assets/g158-doc1.png"
+        }
+      ]
+    },
+    {
+      "key": "g161-163",
+      "first": 161,
+      "last": 163,
+      "documents": [
+        {
+          "page": 15,
+          "crop": [
+            40,
+            81,
+            515,
+            334.2809753417969
+          ],
+          "text": "PLEASE READ IMMEDIATELY\n\nTo:     All Staff\nFrom: Information Technology Services\nDate:  July 28\n\nLast night, we experienced an outage of the main webmail server that has\naffected e-mail and web service throughout the company.  -   [1] -. Our\nhost server, webmail.raass.net, failed overnight, and this has interrupted\nour mail service.- [2] -.As a result, it takes much longer to open e-mail.\nIn many cases, accounts may not respond at all.\n\nAt  this  moment,  service  has  still  not  been  fully  restored. We  are\ninvestigating the cause of the problem and working to resolve  it. -   (3] -.\nWe  will  keep  you  posted  with  further  notices  via  automated  voice\nmessages,  so  please  do  not  ignore your phone. We  apologize  for  the\ninconvenience.- [4]-.",
+          "image": "docs/reading-assets/g161-doc1.png"
+        }
+      ]
+    },
+    {
+      "key": "g164-167",
+      "first": 164,
+      "last": 167,
+      "documents": [
+        {
+          "page": 16,
+          "crop": [
+            40,
+            80,
+            515,
+            490
+          ],
+          "text": "jgonzalez@centralavemarketing.comTo:            II\nFrom:          pamison @dantonpubliclibrary.org               II\nSubject:        Library update               II\nDate:               10               II\nAttachment: II @Volunteer OEEOrtunities\n\nDear Ms. Gonzalez,\n\nThank you for your generosity in donating to the Danton Public Library once again last\nyear. Because of donations from you and others, we were able to purchase twenty new\ncomputers for our patrons' use. -   [1] -. We also acquired a new collection of nonfiction\nbooks for our children's room.\n\nAt this time, I would like to tell you about another project we hope to complete with\nadditional funds: converting many of our old, worn-out books into electronic files to help\npreserve their content for future use. This is a costly endeavor. -   [2] -   . If you are able to\ncontribute even a small amount toward this new goal,  it would be greatly appreciated.\n\nIf you are unable to make another monetary donation, please consider helping us complete\nsome small renovation projects that we have scheduled for this year. -   [3] -   . A list of\nthose projects is attached. We hope you will find one that interests you. -   [4] -. We look\nforward to working alongside enthusiastic and engaged community members like yourself\nto ensure the library's future success.\n\nSincerely,\n\nPeter Amison, Community Outreach Coordinator\nDanton Public Library                                                     Vl",
+          "image": "docs/reading-assets/g164-doc1.png"
+        }
+      ]
+    },
+    {
+      "key": "g168-171",
+      "first": 168,
+      "last": 171,
+      "documents": [
+        {
+          "page": 18,
+          "crop": [
+            40,
+            80,
+            515,
+            600
+          ],
+          "text": "6-9-¤) Live Cnat\n                                                               +\n Maria Jacinto [10:24 A.M.):                                                                               1--\n Good morning, everyone. I want to welcome Aika Okura to the chat.\n\n Aika Okura [10:24 A.M.):\n Hi! I'm glad that my bookstore is able to cosponsor the writers' conference this year.  It is a great\n new opportunity for us.\n\n Maria Jacinto [1 0:25A.M.):\nWe are, too. We have expanded the conference to two days, so the additional sponsorship is a\n huge help. A larger conference means more sessions and additional hotel arrangements.\n\n Arthur Rufo [10:26 A.M.):\n Speaking of the hotels ... The Rowtown Hotel was great last year, but it is booked for the dates\nwe need this time around. The Fairmount at Clark has availability for October 17 and 18, though.\n It might be better since they have a larger meeting space and more options for the buffet.\n\n Maria Jacinto [10:28 A.M.):\nThat sounds good. Can you send us the pricing details?\n\nArthur Rufo [10:29 A.M.):\nThey can offer a special room rate for conference attendees, too. As soon as I have the details,\n I'll e-mail everyone.\n\nMaria Jacinto [10:30 A.M.):\nGreat. How are we doing with the keynote speaker?\n\nAika Okura [10:31 A.M.):\nDelara Lette has tentatively agreed.\n\nArthur Rufo [10:32 A.M.):\nOh. I loved her latest mystery! I can see why it became a best seller so quickly.\n\nAika Okura [10:33 A.M.):\nYes, she's great, and I've heard she's also a wonderful speaker. She has another engagement\nin October in London, and she wants to make certain she can do both events. She will confirm\nby the end of the week.\n\nMaria Jacinto [10:34 A.M.):\nOK.  It sounds like things are coming together.  I'll check in again on Friday.                                                                                -•",
+          "image": "docs/reading-assets/g168-doc1.png"
+        }
+      ]
+    },
+    {
+      "key": "g172-175",
+      "first": 172,
+      "last": 175,
+      "documents": [
+        {
+          "page": 20,
+          "crop": [
+            40,
+            80,
+            515,
+            368
+          ],
+          "text": "Employee News\n\nWe would like to extend our congratulations\nto Alicia Portalska, who will be our new Vice\nPresident of Marketing from January  1. This\nfollows  last week's news of Vice President\nLouis Larson's retirement  at the end of the\nyear.\n\nMs. Portalska joined us as a trainee marketing\nassistant  four  years  ago  and was  recently\npromoted  to marketing  director. We would\nlike to thank Ms. Portalska for her dedication\nand outstanding contribution to the marketing\ndepartment. Her work has had a significant\nimpact on our sales figures. It is in part thanks\nto her tireless efforts that we have exceeded\nour  sales  targets  this year. Congratulations,\nMs. Portalska! Your example is an inspiration\nto us all.",
+          "image": "docs/reading-assets/g172-doc1.png"
+        }
+      ]
+    },
+    {
+      "key": "g176-180",
+      "first": 176,
+      "last": 180,
+      "documents": [
+        {
+          "page": 22,
+          "crop": [
+            40,
+            82,
+            515,
+            505
+          ],
+          "text": "To:          Astrid Martin <amartin @eJpost.com>                               II\n  From:      Quail Airlines <reservations@quailairlines.com>                      II\n  Subject:     Flight Confirmation                                              II\n  Date:        l5 MarchI                                                                    I\n\n  Dear Ms. Martin,\n\n  The fl ight information for the ticket you purchased today is below.\n\n  Traveler           Flight Number             Seat     Confirmation Number\n  Ms. Astrid Martin  QA566                   lSD    EV4363592\n  Date of Travel     Departing                          Arriving\n  10 April             Brussels, Belgium, I 0:35 A.M.          Toronto, Canada, 1:00 P.M.\n Boarding Time: 9:35 A.M. to 10:05 A.M.\n\n Baggage Reservation: 1 checked bag,  l carry-on bag\n\n  On the day of travel, proceed to the Quail Airlines counter to receive your boarding\n  pass and check in your baggage. As a Quail Travel Card member, you are allowed one\n  checked bag and one carry-on bag free of cost. See the chart below for an explanation\n  of baggage charges.\n\n                 1 bag  2 bags  3 bags  4 bags\n   Checked Bag  $0.00   $30.00  $60.00  $90.00\n  Carry-On      $0.00        -            -          -\n\n  In the event of an airline delay of more than three (3) hours, you may use your Quail\n  Travel Card to enter our Quail Preferred Clubroom. There you may relax, use our\n  high-speed wireless Internet service, and enjoy complimentary food and refreshments\n  at our snack bar.\n                                                                                                t!J",
+          "image": "docs/reading-assets/g176-doc1.png"
+        },
+        {
+          "page": 22,
+          "crop": [
+            40,
+            510,
+            515,
+            718
+          ],
+          "text": "r\n\n             To: Astrid Martin\n            From: Quail Airlines Flight QA566\n            Date: 10 April, 6:00A.M.\n\n            This                     text                    message                                      alert is to                                    inform                                           you                                                          that                                                      your                                                                          flight                                                                 QI\\\n                                                                 566  0              today                     to Toronto,                             Canada,                                     has                                      been                                                 delayed                                                  4                                                     hours                                                       due                                                                           to. I\n            poor weather conditions. Boarding will now begin at 1:35 P.M.\n                       \\Y./e apologize for any inconvenience.",
+          "image": "docs/reading-assets/g176-doc2.png"
+        }
+      ]
+    },
+    {
+      "key": "g181-185",
+      "first": 181,
+      "last": 185,
+      "documents": [
+        {
+          "page": 24,
+          "crop": [
+            40,
+            78,
+            515,
+            415
+          ],
+          "text": "To:        II custserv@ xanthusflowers.co. uk                                                                             I\nFrom:      II mnair@nortraxpetrol.co.uk                                                                             I\nDate:          II 27 July\nSubject:    II Order #9871                                                    I\n\nDear Sir or Madam:\n\nOn 24 July, I placed an online order for £180 for three arrangements of white roses and\npink lilies on behalf of my company, Nortrax Petroleum. The flowers were meant to be\ndelivered by 10 A.M. the following day for a company banquet that evening.\n\nUnfortunately, the flowers did not arrive until noon. Moreover, the bouquets consisted of\npink and white carnations. Worst of all, many of the flowers were either wilted or were\nshedding petals and thus could not be used to decorate the banquet room as planned. I was\nsurprised and disappointed to be let down by Xanthus Flowers, a company we at Nortrax\nPetroleum have come to trust and depend on over the last five years.\n\nSince the flowers were for a one-time event, a replacement order is not really an option.\nConsequently, I would like to receive a refund.\n\nThank you for your attention to this matter.\n\nSincerely,\n\nMindy Nair\nCorporate Event Coordinator\nNortrax Petroleum                                                                                I",
+          "image": "docs/reading-assets/g181-doc1.png"
+        },
+        {
+          "page": 24,
+          "crop": [
+            40,
+            429,
+            515,
+            713
+          ],
+          "text": "To:            II mnair@nortraxpetrol.co.uk                                                                             I\nFrom:      II custserv@xanthusflowers.co.uk                                                                             I\nDate:                II 28 July\nSubject:       Order #9871           II                                                               I\nDear Ms. Nair,                                                    kJ\n\nWe sincerely apologize for the problems you recently experienced with your order. We\nhave recently transitioned to a larger facility and have experienced a few challenges as we\nadjust. It is our goal to provide on-time delivery and high-quality flowers for every order.\nWe regret that this order did not live up to our high standards.\n\nA refund cheque in the amount of £180 has been issued to your company. Because we are\nat fault, we would like to offer you a 20% discount plus free delivery on your next order.\n\nThank you for being a loyal customer. We look forward to serving you again in the near\nfuture.\n\nRegards,\n\nBill McCabe\nCustomer Service Manager",
+          "image": "docs/reading-assets/g181-doc2.png"
+        }
+      ]
+    },
+    {
+      "key": "g186-190",
+      "first": 186,
+      "last": 190,
+      "documents": [
+        {
+          "page": 26,
+          "crop": [
+            40,
+            80,
+            515,
+            419
+          ],
+          "text": "(  http://www.singhsupplies.com\n\n     r  Home TAbout Us 1 Products T Orders 1Contact Us l\n\n    Singh Supplies LLC\n\n    Singh Supplies LLC is your leading source for shipping and packaging materials. Our\n     founder, Chatar Singh, started the business more than 30 years ago, when he coined\n     the company's motto, \"Expect the best for less.\"\n\n   How do we, his children and grandchildren, make his pledge a reality today? We buy\n       all materials in bulk and pass the savings along to our customers. You will receive the\n    lowest prices and highest quality as well as the most attentive customer service in the\n     shipping-supplies business .\n\n        ../ Each order is filled within 24 hours .\n    ../You may phone, fax, e-mail, or text your order.\n        ../ Customer service agents are available 24 hours a day, 7 days a week.\n     ../Five shipping centers in the Northeast minimize costs and shorten delivery times.\n\n    This is our satisfaction guarantee: If you are not completely satisfied, you may return\n    your order within 10 days of purchase for a full refund. After 10 days you may return\n    an order for a credit that is valid for up to one year. Please note that the cost of return\n    shipping is the responsibility of the customer.",
+          "image": "docs/reading-assets/g186-doc1.png"
+        },
+        {
+          "page": 26,
+          "crop": [
+            40,
+            430,
+            515,
+            659
+          ],
+          "text": "Singh Supplies LLC\n\nDate: July 10     Name: Montjoy Antiques, attn. Shipping Department\n\nShipping address: 102 Danbury Street, Valleyville, New Hampshire 03038\n\nProduct number  Description             Quantity  Unit Price   Total Price\nMB 01267         cardboard box (large)     80         1.75         140.00\nMB 01257         cardboard box (medium)   200        1.50         300.00\nMB 01268          reinforced crate          50         15.78       789.00\nTR 01345          tape roll                30         2.90          87.00\nBW 01456         bubble wrap roll          10        5.60          56.00\n                                                       Subtotal:       1372.00\nThank you for your business!                       Delivery charge:  140.12\n                                                        Total:          1512.12",
+          "image": "docs/reading-assets/g186-doc2.png"
+        },
+        {
+          "page": 27,
+          "crop": [
+            40,
+            48,
+            515,
+            365
+          ],
+          "text": "*E-mail*                                JJ=\n\nTo:            Jung Hee Kim <jhk@montjoyantigues.com>\n\nFrom:          Francine Mayo <fmayo@montjoyantiques.com>\n\nDate:          August 12\n\nSubject:        Order problem\n\nHi, Jung Hee,\n\nI just checked with our deliveries department and I am pleased that our July 10 order\nwas delivered promptly by Singh Supplies as usual. However, now that we've finally\nmoved the items into the warehouse,  it appears we inadvertently ordered far too many\nof the sturdy crates. We use this item rarely, so it could take us years to go through this\nmany. In addition, they're big, so we've had to stack several in the restoration\ndepartment, where space is already at a premium. Could you contact Achint Singh today\nand find out if we can send half of them back? Please forward me any instructions he\ngives you and I'll take it from there.\n\nThank you!\n\nFran",
+          "image": "docs/reading-assets/g186-doc3.png"
+        }
+      ]
+    },
+    {
+      "key": "g191-195",
+      "first": 191,
+      "last": 195,
+      "documents": [
+        {
+          "page": 28,
+          "crop": [
+            40,
+            80,
+            515,
+            450
+          ],
+          "text": "Tolley Praises Local Farms\n\nMANCHESTER (June 2)-Local horticulture\nexpert  Cassandra  Tolley   is  scheduled  to\ndeliver a lecture Friday night at the Burton\nAuditorium  in  Manchester. The owner  of\nGreen  Ridge  Farm  in  nearby  Windham\nCounty,  Ms.   Tolley   will   discuss   the\nimportance of supporting and promoting local\nfarmers.\n\nA strong advocate for small-scale farmers and\na small-scale farmer herself, Ms. Tolley has\ntraveled extensively over the past few years to\ndeliver her message of \"eating locally.\"\n\n\"If we make an effort to source our ingredients\nlocally, we not only sustain and assist the local\neconomy, we also encourage variety in the\nmarketplace,\" says Ms. Tolley. \"And that is\nbeneficial to consumers.\"\n\n\"Everyone  should  spend  their  weekends\nbrowsing the regional farmers' markets,\" she\nadds. \"It's the best place to get your groceries\nduring the summer.\"\n\nFriday night's lecture begins at 7 P.M. It is free,\nbut seating is limited. Please arrive early. To\nview a comprehensive  listing of statewide\nsummer      farmers'      markets,       visit\nwww. vermontfarmersmarkets.org.",
+          "image": "docs/reading-assets/g191-doc1.png"
+        },
+        {
+          "page": 28,
+          "crop": [
+            40,
+            467,
+            515,
+            659
+          ],
+          "text": "rtTo:           Cook Today Writing Staff                                        I\n                Zack Hernandez, Editor-in-Chief                                   I\n Re: --II Cassandra Tolley talk                                                                              I\nl o8te:           June 8                                                         I\n To all staff,                                                                                   1--..\n\n  Cassandra Tolley is giving a talk on Friday. Please let me know if you can go. I'm\n  confident she'll provide some good material for an article on local growers. I had a chance\n  to hear her speak last year at Green Ridge Farm. I found her not only brilliant but funny\n  as well.\n\n Zack\n                                                                                                            r-•",
+          "image": "docs/reading-assets/g191-doc2.png"
+        },
+        {
+          "page": 29,
+          "crop": [
+            40,
+            42,
+            515,
+            253
+          ],
+          "text": "Features Outline for the August Issue of Cook Today Magazine\n\nFeature Title       Topic                        Writer\n\nLocal Made Good   Sourcing and showcasing local     Ira Newton\n                    producers and ingredients\n\nHerbs All Year      Growing and maintaining an      Makalah Young\n                    indoor kitchen herb garden\n\nVegan Delicious     Modern, nutritious, organic      Keyon Davis\n                   vegan rectpes\n\nAmazing August   A calendar of events in August     J ae-eun Park",
+          "image": "docs/reading-assets/g191-doc3.png"
+        }
+      ]
+    },
+    {
+      "key": "g196-200",
+      "first": 196,
+      "last": 200,
+      "documents": [
+        {
+          "page": 30,
+          "crop": [
+            40,
+            76,
+            515,
+            311
+          ],
+          "text": "Madera Hotels Member Rewards\n\n              **April Specials**\n\nMake a reservation by April 30 for a three-night\nor longer stay at any of our hotels between\nApril 1 and August 31, and receive a choice of:\n                                                                      fv1v. BviaVl Cavefli(1) 20 points per dollar spent+ 500 bonus points\n(2) $50 restaurant gift card for use at any                                         81.5  I vviVt@ St.\n   Madera Hotel restaurants\n(3) 40% discount off spa services during         New Yovk. NY :1-0005\n   your stay\n(4) A discount on a car rental booked at the\n   same time as your stay\nWe appreciate our frequent customers and thank you\nfor continuing to choose Madera Hotels.",
+          "image": "docs/reading-assets/g196-doc1.png"
+        },
+        {
+          "page": 30,
+          "crop": [
+            40,
+            322,
+            515,
+            664
+          ],
+          "text": "....\n                                                                                  r-\n(  http://www. maderahotels/customersupport/form .com                               )®\n\nMadera Hotels Member Rewards Customer Support:\n\nPlease complete this form with as much detail as possible so that we can better assist you.\nToday's Date: I July 14  I\nProperty Name: IThe Grand Madera I   Reservation Number: lxWQ43R2 I\n\nLocation: (select one)  D Denver     [XJ Los Angeles  DNewYork  0Washington, DC\nHotel Stay Start Date: I May 12  I\nName: IBrian Carelli I\nMembership Number: I811932013 I\nEmail: I bcarelli@pointinvesting.com I\n\nPhone Number: lssS-0101 1\n\n Comments/Concerns:\n\n I recently took advantage of your April Specials when I booked a stay at the Los Angeles\n Grand Madera for May. I requested the bonus points offer when I made my reservation\n online, but when I received my June Member Rewards statement, I noticed that the\n points had not been applied to my account. Please let me know if I will still receive the\n bonus points. Thank you.\n                                                                                                                                                                                       r-...",
+          "image": "docs/reading-assets/g196-doc2.png"
+        },
+        {
+          "page": 31,
+          "crop": [
+            40,
+            59,
+            515,
+            312
+          ],
+          "text": "To:               II Brian Carelli <bcarelli @pointinvesting.com>                                                                              I\nFrom:        II Oliver Beltran <obeltran @maderahotels.com>                                                                              I\nDate:               II July 16\nSubject:     II Your Inguiry- B11932013                                         I\n\nDear Mr. Carelli,\n\nThank you for being a valued member of the Madera Hotels Member Rewards program.\nWe appreciate you choosing Madera for your business conferences and personal trips. I\nlooked into your request, and it seems that you are correct; we did not credit your account\nwith the bonus points for your stay. Instead, we sent the restaurant gift card to your\nbusiness address. I apologize for this mistake and will credit your account right away.\nAlso, to compensate for our mistake, I will double the offer.\n\nSincerely,\n\nOliver Beltran\nSenior Manager, Customer Support\nMadera Hotels                                                                                       t!J",
+          "image": "docs/reading-assets/g196-doc3.png"
+        }
+      ]
+    }
+  ]
+}
