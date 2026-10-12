@@ -13,4 +13,4 @@ Kết quả audit ngày 12/10/2026, dựa trên PDF gốc, artifact và kiểm t
 | Kết quả thi | Đúng/sai/bỏ qua tổng100; nộp trùng nhất quán; lọc chi tiết | Video bản V2 |
 | Giao diện thân thiện | Figma V2; layout desktop và mobile390, tab tài liệu, đọc/câu hỏi tách rõ | Đẹp/thân thiện và điểm cuối do giảng viên đánh giá |
 
-25 Backend tests, 2 Flutter tests, 22 ca HTTP/SQL đều đạt. Có kiểm tra riêng fresh import và biên tập SQL. Xem docs/FINAL-REVIEW.md và docs/TESTING.md. Video cũ đã có trên GitHub nhưng chưa đủ nội dung; Mobile chưa kiểm thử trên điện thoại/emulator. Word không upload theo yêu cầu sinh viên.
+25 Backend tests, 2 Flutter tests, 22 ca HTTP/SQL đều đạt. Có kiểm tra riêng fresh import và biên tập SQL. Xem docs/FINAL-REVIEW.md và docs/TESTING.md. Video mới đã thay bản cũ trên GitHub và chưa được rà soát nội dung; Mobile chưa kiểm thử trên điện thoại/emulator. Word không upload theo yêu cầu sinh viên.

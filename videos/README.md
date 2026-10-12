@@ -1,6 +1,6 @@
 # Kịch bản quay demo nộp bài
 
-Đã có video do sinh viên cung cấp: [2026-10-12 10-56-39.mp4](./2026-10-12%2010-56-39.mp4). Đã rà khung hình mỗi giây ngày 12/10/2026: video 80,83 giây, 1920×1080, giao diện V1; chưa bao phủ đủ chức năng. Cần quay bản V2, đặc biệt import thành công, lưu chỉnh sửa rồi tải lại, file sai Tags, Part 7 và tự thu bài. Dùng quay màn hình Windows hoặc quay màn hình điện thoại; không hiển thị mật khẩu, mã phiên hoặc cấu hình bí mật.
+Video mới do sinh viên cung cấp: [2026-10-12 15-31-45.mp4](./2026-10-12%2015-31-45.mp4). File này thay video cũ 2026-10-12 10-56-39.mp4. Chưa rà soát video mới để xác nhận bao phủ từng chức năng; đánh giá video 80,83 giây trước đó áp dụng cho bản cũ.
 
 1. Giới thiệu tên, mã sinh viên, thư mục Backend/Frontend; mở link Figma Make và các màn hình, nói rõ đây là thiết kế.
 2. Mở Word Tagged: 100 câu, 30/16/54, 75 phút, group/document/blank/image và đáp án proposed.

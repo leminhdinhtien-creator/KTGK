@@ -76,4 +76,4 @@ tools/integration_check.py kiểm thử HTTP và SQL thật khi Backend đang ch
 Giao diện hiện tại lấy từ **Figma Make V2** “Upgrade Reading Studio Design”: thư viện tìm kiếm, màn thi responsive, tab bài đọc/câu hỏi và tài liệu, điều hướng 100 câu, trạng thái lưu, kết quả có bộ lọc và Admin xem theo nhóm. Nguồn xuất trực tiếp được giữ trong `design/figma-make`, bản gốc trong `src/legacy`. Xem [bàn giao thiết kế V2](docs/FIGMA-V2-HANDOFF.md). Mở http://localhost:5100/ và nhấn Ctrl+F5 để nhận bản giao diện mới.
 
 
-Đối chiếu cuối với đề gốc: [FINAL-REVIEW](docs/FINAL-REVIEW.md). Chức năng đã kiểm tra đạt; phần Mobile chưa chạy trên thiết bị/emulator và video 80,83 giây chưa demo đủ chức năng/giao diện V2. Đã bổ sung kiểm tra Part 6 stem chỉ chứa đúng số câu; fresh import và biên tập SQL được kiểm thử trên fixture riêng.
+Đối chiếu cuối với đề gốc: [FINAL-REVIEW](docs/FINAL-REVIEW.md). Chức năng đã kiểm tra đạt; phần Mobile chưa chạy trên thiết bị/emulator và video mới đã thay bản 80,83 giây; cần rà soát nội dung video mới. Đã bổ sung kiểm tra Part 6 stem chỉ chứa đúng số câu; fresh import và biên tập SQL được kiểm thử trên fixture riêng.

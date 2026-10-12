@@ -1,5 +1,7 @@
 # Đối chiếu cuối với đề gốc ngày 12 tháng 10 năm 2026
 
+Cập nhật bàn giao: sinh viên đã thay video bằng 2026-10-12 15-31-45.mp4. Đánh giá video 80,83 giây bên dưới là lịch sử của bản cũ; chưa rà soát video mới để xác nhận đủ chức năng.
+
 Đã đọc đủ 4 trang Đề thi giữa kỳ.pdf, đối chiếu Reading v10.pdf (31 trang), Word Tagged, schema/data SQL thật, source và video hiện có. Phạm vi đối chiếu là yêu cầu I–VI và 8 tiêu chí; không tự chấm điểm.
 
 | Yêu cầu | Minh chứng hiện tại | Kết luận |
@@ -32,6 +34,6 @@ Các khung hình cho thấy upload/xem trước, báo file trùng (khoảng giâ
 ## Cần chốt trước khi coi toàn bộ bài nộp hoàn tất
 
 1. Chạy thử Flutter trên điện thoại/emulator để xác nhận phần ứng dụng di động; kiểm thử web không thay cho mục này. Thầy không yêu cầu nộp riêng bộ Android SDK, APK hay một video liên tục 75 phút.
-2. Quay demo giao diện V2 đủ chức năng, dùng bản Word thử mới chưa có lượt thi cho import và biên tập; đưa video mới vào videos trên GitHub. Không sửa đề gốc/đề đã thi để quay.
+2. Rà soát video mới để xác nhận demo giao diện V2 đủ chức năng, gồm import và biên tập trên bản Word thử mới chưa có lượt thi. Không sửa đề gốc/đề đã thi để quay.
 
 Cảnh báo 5 phút trong UI được đối chiếu mã, server deadline/expiry đã chạy thực tế bằng fixture; chưa quan sát cảnh báo UI trong một lượt liên tục đủ 75 phút. Mức đẹp/thân thiện và điểm số cuối do giảng viên đánh giá.

@@ -37,4 +37,4 @@ Figma Make V2 đã tải về; web kiểm tra 1440×900 và 390×844: tìm đề
 
 ## Phạm vi chưa xác minh
 
-Source Flutter/Android có nhưng chưa chạy trên thiết bị/emulator. Chưa chạy lượt liên tục 75 phút; expiry/worker dùng deadline rút ngắn đúng fixture riêng, đề vẫn 75 phút. Đáp án proposed chưa đối chiếu key ETS chính thức. Video cũ 80,83 giây là giao diện V1 và chưa đủ demo từng chức năng. Xem FINAL-REVIEW.md để đối chiếu đầy đủ mục I–VI của đề.
+Source Flutter/Android có nhưng chưa chạy trên thiết bị/emulator. Chưa chạy lượt liên tục 75 phút; expiry/worker dùng deadline rút ngắn đúng fixture riêng, đề vẫn 75 phút. Đáp án proposed chưa đối chiếu key ETS chính thức. Video mới 2026-10-12 15-31-45.mp4 đã thay bản cũ; chưa rà soát nội dung video mới. Đánh giá bản 80,83 giây trước đây thuộc video cũ. Xem FINAL-REVIEW.md để đối chiếu đầy đủ mục I–VI của đề.

@@ -24,3 +24,7 @@ design/figma-make/.figma/
 *.pdf
 docs/evidence/
 docs/ERD.png
+
+# Python test cache
+**/__pycache__/
+*.pyc
