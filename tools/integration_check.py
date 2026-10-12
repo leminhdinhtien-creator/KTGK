@@ -5,7 +5,7 @@ import json, re, secrets, io, zipfile, time, subprocess, sys, uuid, base64
 from html.parser import HTMLParser
 
 ROOT=Path(__file__).resolve().parents[1]
-BASE='http://localhost:5100'
+BASE='http://127.0.0.1:5100'
 records=[]
 def record(name,detail=''):
     records.append({'case':name,'status':'PASS','detail':detail})
@@ -74,6 +74,10 @@ def main():
     before=counts();content=(ROOT/'docs/TOEIC-Reading-Test10-Tagged.docx').read_bytes()
     c,j=file_call(opener,token,'/Reading/PreviewFile',content);preview=unwrap(c,j)
     assert counts()==before and sum(len(p['questions']) for p in preview['parts'])==100
+    for part in preview['parts']:
+        if part['number']!=5:
+            assert all(q['groupKey'] for q in part['questions'])
+            assert sum(len([q for q in part['questions'] if q['groupKey']==g['key']]) for g in part['groups'])==len(part['questions'])
     record('Word preview before writing SQL')
     bad=io.BytesIO()
     with zipfile.ZipFile(io.BytesIO(content)) as source,zipfile.ZipFile(bad,'w') as target:

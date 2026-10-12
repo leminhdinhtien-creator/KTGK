@@ -71,3 +71,6 @@ flutter build web --dart-define=API_URL=http://localhost:5100
 tools/integration_check.py kiểm thử HTTP và SQL thật khi Backend đang chạy. Script tạo các lượt thử riêng và rút ngắn hạn của đúng fixture hết hạn; không sửa thời lượng đề 75 phút. Có thể chạy --setup-only để kiểm tra import/xem trước. Đề có lượt thi sẽ khóa kiểm thử sửa.
 
 Đối chiếu 8 tiêu chí trong [CHECKLIST](CHECKLIST.md). Source đã upload lên https://github.com/leminhdinhtien-creator/KTGK (nhánh main); video đã bổ sung trong videos/. Giữ .runtime, .recovery, bin/obj, node_modules, cấu hình local và secrets ngoài Git. Template gốc MyCompany.MyProject được giữ nguyên.
+
+
+Giao diện hiện tại lấy từ **Figma Make V2** “Upgrade Reading Studio Design”: thư viện tìm kiếm, màn thi responsive, tab bài đọc/câu hỏi và tài liệu, điều hướng 100 câu, trạng thái lưu, kết quả có bộ lọc và Admin xem theo nhóm. Nguồn xuất trực tiếp được giữ trong `design/figma-make`, bản gốc trong `src/legacy`. Xem [bàn giao thiết kế V2](docs/FIGMA-V2-HANDOFF.md). Mở http://localhost:5100/ và nhấn Ctrl+F5 để nhận bản giao diện mới.

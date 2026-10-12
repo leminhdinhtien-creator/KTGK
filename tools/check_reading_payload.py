@@ -3,7 +3,7 @@ from pathlib import Path
 import json, secrets, time, urllib.request
 
 root=Path(__file__).resolve().parents[1]
-base='http://localhost:5100'
+base='http://127.0.0.1:5100'
 def request(path,method='GET',body=None,key=None):
     headers={'Content-Type':'application/json'}
     if key: headers['X-Reading-Session']=key

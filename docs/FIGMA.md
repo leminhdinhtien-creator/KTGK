@@ -1,5 +1,7 @@
 # Thiết kế Reading Studio
 
+**Bản hiện tại: V2 “Upgrade Reading Studio Design”, tạo trong Figma Make ngày 12/10/2026, tải mã bằng Download code và triển khai lại trên ứng dụng.** Xem [bàn giao V2](FIGMA-V2-HANDOFF.md). V1 được giữ để đối chiếu.
+
 [Figma Make AI — 16 màn hình](https://www.figma.com/make/tEmZRZ6BuPKQhvfr7VauZT/Design-Reading-Studio-UI)
 
 Đã tạo bằng Make AI trong tài khoản người dùng: thư viện, chi tiết, Part 5, Part 6, Part 7 một/hai/ba tài liệu, điều hướng 100 câu, cảnh báo 5 phút, xác nhận nộp, hết giờ, mất mạng, kết quả và 3 trang Admin. Không có Mobile login.
