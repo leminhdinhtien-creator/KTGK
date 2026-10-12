@@ -8,7 +8,7 @@ Backend dùng template ASP.NET Boilerplate MVC hiện có, .NET 9 và SQL Server
 
 ## Bàn giao
 
-Repository này chứa source code; hai file Word đề thi/báo cáo được nộp riêng và không được upload theo yêu cầu sinh viên. Video full screen sẽ bổ sung trong `videos/`. Những đường dẫn Word, ảnh minh chứng và kết quả kiểm thử bên dưới mô tả artifact trên máy làm bài, không có sẵn trong repo.
+Repository này chứa source code; hai file Word đề thi/báo cáo được nộp riêng và không được upload theo yêu cầu sinh viên. Video sinh viên đã bổ sung trong `videos/`. Những đường dẫn Word, ảnh minh chứng và kết quả kiểm thử bên dưới mô tả artifact trên máy làm bài, không có sẵn trong repo.
 
 Để chạy các test parser DOCX/integration, đặt file Word Tagged đã nộp riêng tại `docs/TOEIC-Reading-Test10-Tagged.docx`. Source ứng dụng chạy không cần file đó sau khi đã import đề vào SQL.
 
@@ -20,7 +20,7 @@ Repository này chứa source code; hai file Word đề thi/báo cáo được n
 - docs/ERD.png, docs/migration-plan.sql, docs/evidence: sơ đồ, schema và kết quả kiểm tra.
 - [Figma Make AI](https://www.figma.com/make/tEmZRZ6BuPKQhvfr7VauZT/Design-Reading-Studio-UI): 16 màn hình prototype thật. [Chi tiết Figma](docs/FIGMA.md).
 - design/figma-make/src: mã giao diện xuất trực tiếp từ Make, làm căn cứ triển khai Flutter.
-- videos/README.md: kịch bản quay demo; chưa có video nộp bài.
+- videos/README.md: kịch bản và video demo do sinh viên cung cấp.
 
 Đáp án là **đề xuất**, chưa xác minh với đáp án ETS chính thức, không quy đổi điểm TOEIC. Bài đọc ảnh giữ bố cục PDF gốc; văn bản trích PDF cần đối chiếu khi biên tập.
 
@@ -70,4 +70,4 @@ flutter build web --dart-define=API_URL=http://localhost:5100
 
 tools/integration_check.py kiểm thử HTTP và SQL thật khi Backend đang chạy. Script tạo các lượt thử riêng và rút ngắn hạn của đúng fixture hết hạn; không sửa thời lượng đề 75 phút. Có thể chạy --setup-only để kiểm tra import/xem trước. Đề có lượt thi sẽ khóa kiểm thử sửa.
 
-Đối chiếu 8 tiêu chí trong [CHECKLIST](CHECKLIST.md). Source đã upload lên https://github.com/leminhdinhtien-creator/KTGK (nhánh main); video bổ sung sau. Giữ .runtime, .recovery, bin/obj, node_modules, cấu hình local và secrets ngoài Git. Template gốc MyCompany.MyProject được giữ nguyên.
+Đối chiếu 8 tiêu chí trong [CHECKLIST](CHECKLIST.md). Source đã upload lên https://github.com/leminhdinhtien-creator/KTGK (nhánh main); video đã bổ sung trong videos/. Giữ .runtime, .recovery, bin/obj, node_modules, cấu hình local và secrets ngoài Git. Template gốc MyCompany.MyProject được giữ nguyên.

@@ -15,4 +15,4 @@ Kiểm tra ngày 12/10/2026. Kết quả dưới đây dựa trên artifact và 
 
 Backend 23/23 tests đạt; Flutter 1/1 widget test đạt, analyze không có vấn đề, build web thành công. Bản web không thay kiểm thử Android. Ca deadline rút ngắn thuộc fixture thử riêng; đề vẫn 75 phút. Source Backend nằm ở Backend/aspnet-core/src; Frontend ở Frontend/lib/main.dart. Chi tiết: docs/TESTING.md, docs/FIGMA.md, docs/evidence.
 
-Source đã upload lên GitHub/KTGK; chưa quay video, chưa cài Android SDK/chấp nhận license. Không ghi “hoàn thành 100%”.
+Source đã upload lên GitHub/KTGK; đã có video sinh viên cung cấp, cần rà soát bao phủ chức năng, chưa cài Android SDK/chấp nhận license. Không ghi “hoàn thành 100%”.

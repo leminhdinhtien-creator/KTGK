@@ -1,6 +1,6 @@
 # Kịch bản quay demo nộp bài
 
-Chưa có video được quay. Dùng quay màn hình Windows hoặc quay màn hình điện thoại; không hiển thị mật khẩu, mã phiên hoặc cấu hình bí mật.
+Đã có video do sinh viên cung cấp: [2026-10-12 10-56-39.mp4](./2026-10-12%2010-56-39.mp4). Chưa rà soát nội dung để xác nhận bao phủ toàn bộ chức năng. Dùng quay màn hình Windows hoặc quay màn hình điện thoại; không hiển thị mật khẩu, mã phiên hoặc cấu hình bí mật.
 
 1. Giới thiệu tên, mã sinh viên, thư mục Backend/Frontend; mở link Figma Make và các màn hình, nói rõ đây là thiết kế.
 2. Mở Word Tagged: 100 câu, 30/16/54, 75 phút, group/document/blank/image và đáp án proposed.
@@ -12,4 +12,4 @@ Chưa có video được quay. Dùng quay màn hình Windows hoặc quay màn h�
 8. Nộp một phần, quay cảnh báo câu bỏ trống và kết quả đúng+sai+bỏ qua=100; thử quay lại sẽ không sửa được.
 9. Quay một lượt 75 phút thật hoặc tua video có mốc thời gian rõ. Test fixture hạn rút ngắn chỉ là kiểm thử kỹ thuật, phải nói rõ, không dùng làm bằng chứng đã chạy liên tục 75 phút.
 
-Cần bổ sung video thực tế và kiểm thử Android trước khi chốt bài nộp. Không dùng hình thiết kế thay cho minh chứng chạy ứng dụng.
+Video thực tế đã được bổ sung. Cần kiểm tra độ đầy đủ của video và kiểm thử Android trước khi chốt bài nộp. Không dùng hình thiết kế thay cho minh chứng chạy ứng dụng.
