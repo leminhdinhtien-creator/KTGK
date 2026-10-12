@@ -3,7 +3,7 @@ from pathlib import Path
 import re
 import subprocess
 
-root = Path(__file__).resolve().parents[1]
+root = Path(__file__).resolve().parents[2]
 entries = subprocess.check_output(['git', 'ls-files', '-s', '-z'], cwd=root).split(b'\0')
 total = 0
 blocked = []
@@ -17,7 +17,7 @@ for entry in entries:
     total += len(data)
     if len(data) > 95 * 1024 * 1024:
         blocked.append((name, 'too large for normal GitHub upload'))
-    if re.search(r'(^|/)(tmp|\.runtime|\.recovery|node_modules|build|obj|bin)(/|$)', name) or name.endswith(('appsettings.Local.json', 'secrets.json', 'Logs.txt')):
+    if re.search(r'(^|/)(tmp|\.work|\.template-original|\.runtime|\.recovery|node_modules|build|obj|bin)(/|$)', name) or name.endswith(('appsettings.Local.json', 'secrets.json', 'Logs.txt')):
         blocked.append((name, 'local/runtime file'))
     if b'\0' not in data:
         if re.search(rb'gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{30,}|sk-proj-[A-Za-z0-9_-]{30,}|-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----', data):

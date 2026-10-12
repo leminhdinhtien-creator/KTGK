@@ -2,10 +2,10 @@ from pathlib import Path
 import json
 import fitz
 
-root = Path(__file__).resolve().parents[1]
-pdf = fitz.open(root / 'tmp/inspection/report-final.pdf')
+root = Path(__file__).resolve().parents[2]
+pdf = fitz.open(root / 'Backend/.work/inspection/report-final.pdf')
 for index, page in enumerate(pdf):
-    page.get_pixmap(matrix=fitz.Matrix(1.4, 1.4)).save(root / f'tmp/inspection/report-final/page-{index + 1}.png')
+    page.get_pixmap(matrix=fitz.Matrix(1.4, 1.4)).save(root / f'Backend/.work/inspection/report-final/page-{index + 1}.png')
 print(f'Rendered {len(pdf)} report pages for visual review.')
 
 summary = '''Verified 12/10/2026
@@ -23,11 +23,11 @@ Not verified: Android, continuous 75-minute run, official ETS answer key.
 Not produced: submission video. No GitHub push.
 See backend-tests.trx, sql-api-integration.json, manual-web-checks.json.
 '''
-(root / 'docs/evidence/verification.txt').write_text(summary, encoding='utf-8')
+(root / 'Backend/docs/evidence/verification.txt').write_text(summary, encoding='utf-8')
 
-source = root / 'tools/figma-make-editable.js'
+source = root / 'Backend/tools/figma-make-editable.js'
 script = source.read_text(encoding='utf-8')
-data = json.loads((root / 'docs/reading-test10.json').read_text(encoding='utf-8'))
+data = json.loads((root / 'Backend/docs/reading-test10.json').read_text(encoding='utf-8'))
 questions = {q['number']: q for q in data['questions']}
 script = script.replace("['comply','conduct','confer','conserve']", json.dumps(list(questions[131]['options'].values()), ensure_ascii=False))
 for number in (176, 186):

@@ -2,7 +2,7 @@ MyCompany.MyProject/
 MyCompany.MyProject.zip
 .recovery/
 .runtime/
-tmp/
+Backend/.work/
 **/bin/
 **/obj/
 **/TestResults/
@@ -16,15 +16,21 @@ tmp/
 *.log
 .env*
 !.env.example
-design/figma-make/.figma/
+Frontend/design/figma-make/.figma/
 **/App_Data/Logs/
-
-# Word/report submitted separately; generated evidence stays local.
-*.docx
-*.pdf
-docs/evidence/
-docs/ERD.png
 
 # Python test cache
 **/__pycache__/
 *.pyc
+
+Backend/.work/
+Backend/.template-original/
+Backend/.template-original.zip
+
+tmp/
+
+# Documents submitted separately; evidence stays local.
+*.docx
+*.pdf
+Backend/docs/evidence/
+Backend/docs/ERD.png

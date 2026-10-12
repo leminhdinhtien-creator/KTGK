@@ -1,5 +1,5 @@
 $ErrorActionPreference='Stop'
-$taskRoot=Split-Path $PSScriptRoot -Parent
+$taskRoot=Split-Path (Split-Path $PSScriptRoot -Parent) -Parent
 $taskConnectionString='Server=localhost;Database=ToeicReadingDB;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;Connect Timeout=8;'
 $taskConnection=[System.Data.SqlClient.SqlConnection]::new($taskConnectionString)
 try { $taskConnection.Open(); Write-Host 'Connected to local ToeicReadingDB using the current Windows account.' }

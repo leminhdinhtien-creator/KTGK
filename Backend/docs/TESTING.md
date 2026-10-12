@@ -29,7 +29,7 @@
 | Background worker submits closed-client expired fixture | PASS |
 | All result counts total 100 | PASS |
 
-Kiểm tra riêng `tools/final_admin_edit_check.py`: import Word mới, cập nhật nội dung câu/phương án/key, cập nhật và đọc lại văn bản/ảnh SQL đều đạt. Chỉ tạo fixture riêng; cleanup kiểm tra đúng ID/tên ngẫu nhiên và không có lượt thi. Hai đề hiện có được giữ nguyên. Không thử sửa đề cũ đã có lượt thi.
+Kiểm tra riêng `Backend/tools/final_admin_edit_check.py`: import Word mới, cập nhật nội dung câu/phương án/key, cập nhật và đọc lại văn bản/ảnh SQL đều đạt. Chỉ tạo fixture riêng; cleanup kiểm tra đúng ID/tên ngẫu nhiên và không có lượt thi. Hai đề hiện có được giữ nguyên. Không thử sửa đề cũ đã có lượt thi.
 
 ## Giao diện đã thao tác
 
@@ -38,3 +38,7 @@ Figma Make V2 đã tải về; web kiểm tra 1440×900 và 390×844: tìm đề
 ## Phạm vi chưa xác minh
 
 Source Flutter/Android có nhưng chưa chạy trên thiết bị/emulator. Chưa chạy lượt liên tục 75 phút; expiry/worker dùng deadline rút ngắn đúng fixture riêng, đề vẫn 75 phút. Đáp án proposed chưa đối chiếu key ETS chính thức. Video mới 2026-10-12 15-31-45.mp4 đã thay bản cũ; chưa rà soát nội dung video mới. Đánh giá bản 80,83 giây trước đây thuộc video cũ. Xem FINAL-REVIEW.md để đối chiếu đầy đủ mục I–VI của đề.
+
+## Sau khi gom thư mục
+
+Ngày 12/10/2026: Backend build đạt (0 lỗi), 25/25 unit tests; Flutter analyze không có vấn đề, 2/2 tests và build web đạt. Mở thư viện, Admin, Flutter và CSS qua cổng 5100 trả HTTP 200. Kiểm tra hai đề: mở bài, ảnh SQL, lưu/khôi phục, nộp và kết quả đều đạt sau khi chuyển đường dẫn.

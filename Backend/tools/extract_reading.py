@@ -1,7 +1,7 @@
 from pathlib import Path
 import pymupdf,re,json
 pdf=pymupdf.open(r'C:\Users\lemin\Downloads\Reading v10.pdf')
-out=Path('tmp/inspection');out.mkdir(parents=True,exist_ok=True)
+out=Path('Backend/.work/inspection');out.mkdir(parents=True,exist_ok=True)
 all_pages=[]
 for i,p in enumerate(pdf):
     lines=[]

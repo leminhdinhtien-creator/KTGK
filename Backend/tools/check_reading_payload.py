@@ -2,7 +2,7 @@
 from pathlib import Path
 import json, secrets, time, urllib.request
 
-root=Path(__file__).resolve().parents[1]
+root=Path(__file__).resolve().parents[2]
 base='http://127.0.0.1:5100'
 def request(path,method='GET',body=None,key=None):
     headers={'Content-Type':'application/json'}
@@ -44,7 +44,7 @@ for exam in exams:
     assert submitted['correct']+submitted['wrong']+submitted['skipped']==100
     review,_,_,_=request(f'/api/reading/attempts/{aid}/result',key=key)
     assert len(review['review'])==100
-(root/'docs/evidence/reading-payload-performance.json').write_text(json.dumps(records,ensure_ascii=False,indent=2),encoding='utf-8')
+(root/'Backend/docs/evidence/reading-payload-performance.json').write_text(json.dumps(records,ensure_ascii=False,indent=2),encoding='utf-8')
 for row in records: print(json.dumps(row,ensure_ascii=False))
 print('PASS lightweight start/save, separate SQL images, restore, submit and result for all current exams.')
 

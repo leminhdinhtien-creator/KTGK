@@ -5,8 +5,8 @@ from docx.shared import Inches
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.text.paragraph import Paragraph
 import hashlib,json,zipfile
-root=Path(__file__).resolve().parents[1]
-out=root/'docs';ev=out/'evidence';ev.mkdir(exist_ok=True)
+root=Path(__file__).resolve().parents[2]
+out=root/'Backend/docs';ev=out/'evidence';ev.mkdir(exist_ok=True)
 im=Image.new('RGB',(1700,1220),'#f7f9fc');d=ImageDraw.Draw(im)
 f=ImageFont.truetype('C:/Windows/Fonts/arial.ttf',32);bold=ImageFont.truetype('C:/Windows/Fonts/arialbd.ttf',34);title=ImageFont.truetype('C:/Windows/Fonts/arialbd.ttf',44)
 d.text((50,35),'TOEIC Reading relational database',font=title,fill='#18374c')
@@ -22,7 +22,7 @@ im.save(out/'ERD.png')
 ref=Path(r'C:\Users\lemin\Downloads\BaoCao-LeMinhDinhTien-2380602224.docx')
 doc=Document(ref)
 sec=doc.sections[0]
-(root/'tmp/inspection/artifact.md').write_text(f'# Report template contract\nReference: {ref}\nSHA256: {hashlib.sha256(ref.read_bytes()).hexdigest()}\nOne section, one rendered reference page. Preserve student name, ID, class, numbered seven headings, grading table, original styles and numbering.\nPage: {sec.page_width/914400:.3f} × {sec.page_height/914400:.3f} inches. Margins: {[round(x/914400,3) for x in (sec.top_margin,sec.bottom_margin,sec.left_margin,sec.right_margin)]}.\nEditable slots: blank paragraphs after each numbered heading; insert actual ERD and Figma images and short descriptions. Leave unchecked all grading items awaiting integration or answer confirmation.\n',encoding='utf-8')
+(root/'Backend/.work/inspection/artifact.md').write_text(f'# Report template contract\nReference: {ref}\nSHA256: {hashlib.sha256(ref.read_bytes()).hexdigest()}\nOne section, one rendered reference page. Preserve student name, ID, class, numbered seven headings, grading table, original styles and numbering.\nPage: {sec.page_width/914400:.3f} × {sec.page_height/914400:.3f} inches. Margins: {[round(x/914400,3) for x in (sec.top_margin,sec.bottom_margin,sec.left_margin,sec.right_margin)]}.\nEditable slots: blank paragraphs after each numbered heading; insert actual ERD and Figma images and short descriptions. Leave unchecked all grading items awaiting integration or answer confirmation.\n',encoding='utf-8')
 def after(p,text=None,image=None,width=6):
     new=doc.add_paragraph();p._p.addnext(new._p)
     if text:new.add_run(text)
@@ -33,7 +33,7 @@ def after(p,text=None,image=None,width=6):
 texts={
 'Sơ đồ database':'Backend ASP.NET Boilerplate MVC / .NET 9 sử dụng SQL Server localhost, database ToeicReadingDB, Windows Authentication. EF migrations đã chạy; 45 bảng gồm 8 bảng Reading và các bảng ABP. Đã kiểm thử đọc/ghi, import và khóa ngoại trên SQL thật. Phiên khách lưu GuestKeyHash; UserId nullable giữ tương thích dữ liệu cũ. Không yêu cầu tài khoản người thi.',
 'Hình ảnh giao diện thiết kế trên Figma / Google Stitch':'Figma Make AI đã tạo 16 màn hình Mobile và Admin, không có Mobile login. Flutter dùng màu xanh ngọc, nền giấy và font DM Sans / Playfair Display từ Make. Link chính: https://www.figma.com/make/tEmZRZ6BuPKQhvfr7VauZT/Design-Reading-Studio-UI . Bản Design có lớp chỉnh sửa tại https://www.figma.com/design/MZOmJvNP8mdpeJoOQqowWC ; trang bàn giao mới còn cần sửa chiều cao chữ và QA do gói Starter hết hạn mức MCP. Hình dưới là thiết kế Make, không phải minh chứng chạy SQL.',
-'Giao diện Admin: Import đề thi':'Admin upload DOCX, xem trước trước khi ghi SQL, đọc Tags và kiểm tra toàn bộ cấu trúc. Import thật đạt: 1 đề, 3 phần, 19 nhóm, 27 tài liệu, 100 câu, 400 lựa chọn. File lỗi bị từ chối, số bản ghi không đổi; file trùng bị từ chối. Kết quả 22 ca HTTP/SQL được lưu trong docs/evidence/sql-api-integration.json. Hình dưới là màn hình xem trước Word hợp lệ trên Admin đang chạy.',
+'Giao diện Admin: Import đề thi':'Admin upload DOCX, xem trước trước khi ghi SQL, đọc Tags và kiểm tra toàn bộ cấu trúc. Import thật đạt: 1 đề, 3 phần, 19 nhóm, 27 tài liệu, 100 câu, 400 lựa chọn. File lỗi bị từ chối, số bản ghi không đổi; file trùng bị từ chối. Kết quả 22 ca HTTP/SQL được lưu trong Backend/docs/evidence/sql-api-integration.json. Hình dưới là màn hình xem trước Word hợp lệ trên Admin đang chạy.',
 'Giao diện Admin: Chỉnh sửa nội dung đề thi sau khi import':'Admin sửa câu hỏi, phương án, đáp án, trạng thái xác minh, văn bản và ảnh bài đọc. Kiểm thử đã lưu rồi đọc lại câu hỏi/tài liệu trên SQL thật. Đã thao tác lưu câu 101 trên giao diện. Đề có lượt thi được khóa sửa để bảo toàn kết quả; văn bản đã sửa được ưu tiên khi hiển thị. Admin giữ authentication và quyền Pages.ReadingAdmin.',
 'Giao diện Users: Chọn lựa đề thi':'Flutter vào trực tiếp thư viện, lấy danh sách qua API thật, không có đăng nhập/đăng ký. Chọn đề mở chi tiết 75 phút, 100 câu và cấu trúc 30/16/54. Mã phiên ngẫu nhiên lưu trong secure storage; server chỉ lưu hash và kiểm tra sở hữu lượt thi. Hình dưới là Flutter web kết nối Backend/SQL thật, kiểm tra ở kích thước 390 × 844; chưa phải kiểm thử Android.',
 'Giao diện Users: Làm bài thi':'Đã thao tác Part 5, Part 6, Part 7 một/hai/ba tài liệu trên Flutter web; ảnh bài đọc giữ bố cục PDF và có zoom. Chọn/đổi/hủy, điều hướng 100 câu, lưu trạng thái, đồng hồ và cảnh báo nộp được lập trình. API/SQL kiểm thử lưu/khôi phục, khóa sau nộp, nộp trùng và server/worker hết hạn đạt. Ca hết hạn dùng fixture rút ngắn riêng, không đổi đề 75 phút. Chưa kiểm thử Android, gián đoạn mạng trên thiết bị hoặc một lượt liên tục đủ 75 phút.',

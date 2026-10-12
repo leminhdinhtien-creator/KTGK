@@ -3,9 +3,9 @@ import json,re,pymupdf,html,hashlib
 from docx import Document
 from docx.shared import Inches,Pt
 
-root=Path(__file__).resolve().parents[1]
+root=Path(__file__).resolve().parents[2]
 pdf=pymupdf.open(r'C:\Users\lemin\Downloads\Reading v10.pdf')
-questions=json.loads((root/'tmp/inspection/questions-extracted.json').read_text(encoding='utf-8'))
+questions=json.loads((root/'Backend/.work/inspection/questions-extracted.json').read_text(encoding='utf-8'))
 answers5='B D C A A D B B C A D A D A D D B B A C D C C A B C B D C D'.split()
 answers6='B C A A D A B C B C A D D A D A'.split()
 answers7='C A A C B A C D C B D A C D D D C A D C B B B A C B B C A D A C B A B C D A B B A C B C C D C B A A C D B C'.split()
@@ -23,7 +23,7 @@ part6={
 135:'22 April\n\nMs. Anna Schoorl\nRodezand 334\n3011 AV Rotterdam\nNetherlands\n\nDear Ms. Schoorl,\n\nCongratulations on your remarkable {{135}} in the Netherlands, Belgium, and Luxembourg. Your region has improved its on-time delivery performance for each of the past seven quarters. {{136}}.\n\nI am pleased to offer you a promotion to Director of European Operations. The position {{137}} in Hamburg, Germany. I realize that relocating may be difficult for you. {{138}}, I certainly hope that you will take time to consider this opportunity. Please call me at your earliest convenience so that we can discuss any concerns you may have.\n\nThank you for being a part of the Unocity Shipping family.\n\nSincerely,\nXia Hsu, Director of Operations\nUnocity Shipping, Inc.',
 139:'To: Wu Investment Services employees\nFrom: Eileen Suen, Office Manager\nRe: Jacob Wu\nDate: 15 August\n\nTo All Staff,\n\nAs many of you are aware, Jacob Wu, our long-standing Chief Executive Officer, {{139}} on 1 October. Twenty years ago, Mr. Wu set out to create a Hong Kong-based services firm with an international scope. {{140}}. Wu Investment Services currently serves clients in seventeen countries, 95 percent of whom have chosen to invest with us for the long term.\n\nMr. Wu will be {{141}} by Thomas Wu, his son, who has served as Vice President of Wu Investment Services for the past four years.\n\nA gathering will be held on 28 September to celebrate Mr. Wu\'s {{142}} career. I will send further information about the event closer to the date. Thank you.\n\nEileen',
 143:'From: Madeleine DeVries, Director of Operations\nTo: All Employees\nDate: June 1\nRe: Travel Policy\n\nTo help reduce {{143}}, the officers have voted to change the company\'s travel policy. The revised policy will be {{144}} on June 15. From that point forward, employees traveling within the country will be required to submit their travel requests to the accounting office no later than three weeks before the date of departure. {{145}}.\n\n{{146}} exceptions to this policy will be decided on a case-by-case basis and must first be approved by the individual employee\'s supervisor.'}
-out=root/'docs';out.mkdir(exist_ok=True);assets=out/'reading-assets';assets.mkdir(exist_ok=True)
+out=root/'Backend/docs';out.mkdir(exist_ok=True);assets=out/'reading-assets';assets.mkdir(exist_ok=True)
 doc=Document();sec=doc.sections[0];sec.top_margin=sec.bottom_margin=Inches(.7);sec.left_margin=sec.right_margin=Inches(.7)
 style=doc.styles['Normal'];style.font.name='Calibri';style.font.size=Pt(10);style.paragraph_format.space_after=Pt(4)
 def tag(s):

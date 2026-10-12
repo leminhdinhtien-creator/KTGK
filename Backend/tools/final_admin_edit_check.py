@@ -4,8 +4,8 @@ import sys,io,zipfile,json,uuid,base64
 sys.path.insert(0,str(Path(__file__).resolve().parent))
 import integration_check as t
 name='AUDIT-'+uuid.uuid4().hex
-root=Path(__file__).resolve().parents[1]
-original=(root/'docs/TOEIC-Reading-Test10-Tagged.docx').read_bytes()
+root=Path(__file__).resolve().parents[2]
+original=(root/'Backend/docs/TOEIC-Reading-Test10-Tagged.docx').read_bytes()
 buffer=io.BytesIO()
 with zipfile.ZipFile(io.BytesIO(original)) as source,zipfile.ZipFile(buffer,'w') as target:
     for n in source.namelist():
@@ -51,5 +51,5 @@ DELETE FROM ReadingParts WHERE ExamId={eid}; DELETE FROM ReadingExams WHERE Id={
 COMMIT; SELECT COUNT(*) Remaining FROM ReadingExams WHERE Id={eid};""")
         assert t.counts(eid)['Exams']==0
 record['ownedFixtureCleanup']='PASS'
-(root/'docs/evidence/final-admin-edit-audit.json').write_text(json.dumps(record,indent=2),encoding='utf-8')
+(root/'Backend/docs/evidence/final-admin-edit-audit.json').write_text(json.dumps(record,indent=2),encoding='utf-8')
 print('PASS fresh Word import, question/options/key editing, document/text/image persistence; owned fixture cleaned.')

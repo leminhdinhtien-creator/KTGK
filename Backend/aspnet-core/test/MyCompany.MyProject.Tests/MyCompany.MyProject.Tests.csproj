@@ -11,7 +11,7 @@
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
   </PropertyGroup>
   <ItemGroup>
-    <None Condition="Exists('..\..\..\..\docs\TOEIC-Reading-Test10-Tagged.docx')" Include="..\..\..\..\docs\TOEIC-Reading-Test10-Tagged.docx" Link="TOEIC-Reading-Test10-Tagged.docx" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\..\docs\TOEIC-Reading-Test10-Tagged.docx" Link="TOEIC-Reading-Test10-Tagged.docx" CopyToOutputDirectory="PreserveNewest" />
     <ProjectReference Include="..\..\src\MyCompany.MyProject.Application\MyCompany.MyProject.Application.csproj" />
     <ProjectReference Include="..\..\src\MyCompany.MyProject.EntityFrameworkCore\MyCompany.MyProject.EntityFrameworkCore.csproj" />
   </ItemGroup>

@@ -1,10 +1,10 @@
 from pathlib import Path
 import json
 
-root=Path(__file__).resolve().parents[1]
-cases=json.loads((root/'docs/evidence/sql-api-integration.json').read_text(encoding='utf-8'))['cases']
+root=Path(__file__).resolve().parents[2]
+cases=json.loads((root/'Backend/docs/evidence/sql-api-integration.json').read_text(encoding='utf-8'))['cases']
 files={
-'CHECKLIST.md':'''# Đối chiếu 8 tiêu chí của giảng viên
+'Backend/docs/CHECKLIST.md':'''# Đối chiếu 8 tiêu chí của giảng viên
 
 Kiểm tra ngày 12/10/2026. Kết quả dưới đây dựa trên artifact và kiểm thử thật, không phải tự chấm điểm.
 
@@ -19,7 +19,7 @@ Kiểm tra ngày 12/10/2026. Kết quả dưới đây dựa trên artifact và 
 | Kết quả thi | 1 | SQL/API bài trống 0/0/100, một phần 1/1/98, đủ 100/0/0; tổng=100, không sửa sau nộp; ảnh Flutter thực tế flutter-result.png | Bổ sung video; chấm theo key proposed |
 | Giao diện đẹp, thân thiện | 1 | Make AI và Flutter dùng DM Sans/Playfair, ink/emerald/paper; đã kiểm tra kích thước điện thoại và sửa nút grid bị xuống dòng | QA bản Android và bản native Design; đánh giá của giảng viên |
 
-Backend 23/23 tests đạt; Flutter 1/1 widget test đạt, analyze không có vấn đề, build web thành công. Bản web không thay kiểm thử Android. Ca deadline rút ngắn thuộc fixture thử riêng; đề vẫn 75 phút. Source Backend nằm ở Backend/aspnet-core/src; Frontend ở Frontend/lib/main.dart. Chi tiết: docs/TESTING.md, docs/FIGMA.md, docs/evidence.
+Backend 23/23 tests đạt; Flutter 1/1 widget test đạt, analyze không có vấn đề, build web thành công. Bản web không thay kiểm thử Android. Ca deadline rút ngắn thuộc fixture thử riêng; đề vẫn 75 phút. Source Backend nằm ở Backend/aspnet-core/src; Frontend ở Frontend/lib/main.dart. Chi tiết: Backend/docs/TESTING.md, Backend/docs/FIGMA.md, Backend/docs/evidence.
 
 Chưa quay video, chưa push/công khai GitHub, chưa cài Android SDK/chấp nhận license. Không ghi “hoàn thành 100%”.
 ''',
@@ -29,17 +29,17 @@ Lê Minh Đình Tiến · 2380602224 · 23DTHC7.
 
 Backend dùng template ASP.NET Boilerplate MVC hiện có, .NET 9 và SQL Server local. Mobile Flutter mở thẳng thư viện, không đăng nhập. Admin giữ authentication và quyền Pages.ReadingAdmin.
 
-Đã kiểm chứng ngày 12/10/2026: build Backend; 23/23 kiểm thử Backend; kết nối và migrations SQL localhost; import Word hợp lệ, từ chối file sai không ghi dở; sửa/lưu/đọc lại SQL; API thi và chấm bài trống, một phần, đủ 100 câu, nộp trùng và hết hạn. Kết quả chi tiết: [TESTING](docs/TESTING.md). Flutter có bản web và kiểm thử không có màn hình đăng nhập. Chưa kiểm chứng Android trên thiết bị/emulator, mất mạng trên thiết bị, hoặc một lượt thi liên tục đủ 75 phút. Không tuyên bố hoàn thành 100%.
+Đã kiểm chứng ngày 12/10/2026: build Backend; 23/23 kiểm thử Backend; kết nối và migrations SQL localhost; import Word hợp lệ, từ chối file sai không ghi dở; sửa/lưu/đọc lại SQL; API thi và chấm bài trống, một phần, đủ 100 câu, nộp trùng và hết hạn. Kết quả chi tiết: [TESTING](Backend/docs/TESTING.md). Flutter có bản web và kiểm thử không có màn hình đăng nhập. Chưa kiểm chứng Android trên thiết bị/emulator, mất mạng trên thiết bị, hoặc một lượt thi liên tục đủ 75 phút. Không tuyên bố hoàn thành 100%.
 
 ## Bàn giao
 
 - Backend/aspnet-core: source MVC, parser Word, EF migrations, API và worker hết hạn.
 - Frontend: source Flutter, Android và web; không dùng mock data trong ứng dụng.
-- docs/TOEIC-Reading-Test10-Tagged.docx: 100 câu 101–200; Part 5/6/7 = 30/16/54; 19 nhóm, 27 tài liệu; 75 phút.
-- docs/BaoCao-LeMinhDinhTien-2380602224.docx: báo cáo theo mẫu gốc, chỉ dùng ảnh chức năng thực tế.
-- docs/ERD.png, docs/migration-plan.sql, docs/evidence: sơ đồ, schema và kết quả kiểm tra.
-- [Figma Make AI](https://www.figma.com/make/tEmZRZ6BuPKQhvfr7VauZT/Design-Reading-Studio-UI): 16 màn hình prototype thật. [Chi tiết Figma](docs/FIGMA.md).
-- design/figma-make/src: mã giao diện xuất trực tiếp từ Make, làm căn cứ triển khai Flutter.
+- Backend/docs/TOEIC-Reading-Test10-Tagged.docx: 100 câu 101–200; Part 5/6/7 = 30/16/54; 19 nhóm, 27 tài liệu; 75 phút.
+- Backend/docs/BaoCao-LeMinhDinhTien-2380602224.docx: báo cáo theo mẫu gốc, chỉ dùng ảnh chức năng thực tế.
+- Backend/docs/ERD.png, Backend/docs/migration-plan.sql, Backend/docs/evidence: sơ đồ, schema và kết quả kiểm tra.
+- [Figma Make AI](https://www.figma.com/make/tEmZRZ6BuPKQhvfr7VauZT/Design-Reading-Studio-UI): 16 màn hình prototype thật. [Chi tiết Figma](Backend/docs/FIGMA.md).
+- Frontend/design/figma-make/src: mã giao diện xuất trực tiếp từ Make, làm căn cứ triển khai Flutter.
 - videos/README.md: kịch bản quay demo; chưa có video nộp bài.
 
 Đáp án là **đề xuất**, chưa xác minh với đáp án ETS chính thức, không quy đổi điểm TOEIC. Bài đọc ảnh giữ bố cục PDF gốc; văn bản trích PDF cần đối chiếu khi biên tập.
@@ -50,11 +50,11 @@ Máy chạy Backend là Windows local, cùng máy SQL của người dùng. Data
 
 ```powershell
 cd D:\KTGK
-powershell -ExecutionPolicy Bypass -File tools/Configure-Sql.ps1
-powershell -ExecutionPolicy Bypass -File tools/Start-Backend.ps1
+powershell -ExecutionPolicy Bypass -File Backend/tools/Configure-Sql.ps1
+powershell -ExecutionPolicy Bypass -File Backend/tools/Start-Backend.ps1
 ```
 
-Mở http://localhost:5100/Reading. Đăng nhập tài khoản Admin của template đã được seed. Password không nằm trong hướng dẫn bàn giao; dùng thông tin Admin hiện có. Script cấu hình không yêu cầu mật khẩu SQL, chỉ kiểm tra Windows Authentication và ghi file local. Nếu chuyển sang máy mới, đọc [SQL-SETUP](docs/SQL-SETUP.md) để chạy Migrator.
+Mở http://localhost:5100/Reading. Đăng nhập tài khoản Admin của template đã được seed. Password không nằm trong hướng dẫn bàn giao; dùng thông tin Admin hiện có. Script cấu hình không yêu cầu mật khẩu SQL, chỉ kiểm tra Windows Authentication và ghi file local. Nếu chuyển sang máy mới, đọc [SQL-SETUP](Backend/docs/SQL-SETUP.md) để chạy Migrator.
 
 Nếu cần tạo lại tài nguyên giao diện Admin:
 
@@ -88,11 +88,11 @@ flutter test
 flutter build web --dart-define=API_URL=http://localhost:5100
 ```
 
-tools/integration_check.py kiểm thử HTTP và SQL thật khi Backend đang chạy. Script tạo các lượt thử riêng và rút ngắn hạn của đúng fixture hết hạn; không sửa thời lượng đề 75 phút. Có thể chạy --setup-only để kiểm tra import/xem trước. Đề có lượt thi sẽ khóa kiểm thử sửa.
+Backend/tools/integration_check.py kiểm thử HTTP và SQL thật khi Backend đang chạy. Script tạo các lượt thử riêng và rút ngắn hạn của đúng fixture hết hạn; không sửa thời lượng đề 75 phút. Có thể chạy --setup-only để kiểm tra import/xem trước. Đề có lượt thi sẽ khóa kiểm thử sửa.
 
-Đối chiếu 8 tiêu chí trong [CHECKLIST](CHECKLIST.md). Chưa push hoặc công khai GitHub. Giữ .runtime, .recovery, bin/obj, node_modules, cấu hình local và secrets ngoài Git. Template gốc MyCompany.MyProject được giữ nguyên.
+Đối chiếu 8 tiêu chí trong [CHECKLIST](Backend/docs/CHECKLIST.md). Chưa push hoặc công khai GitHub. Giữ .runtime, .recovery, bin/obj, node_modules, cấu hình local và secrets ngoài Git. Template gốc MyCompany.MyProject được giữ nguyên.
 ''',
-'docs/SQL-SETUP.md':r'''# SQL Server local
+'Backend/docs/SQL-SETUP.md':r'''# SQL Server local
 
 Server localhost; database ToeicReadingDB; Windows Authentication.
 
@@ -102,7 +102,7 @@ Server=localhost;Database=ToeicReadingDB;Integrated Security=True;Encrypt=True;T
 
 Backend chạy trên Windows của người dùng và đã kết nối thực tế. Database ban đầu trống; migrations EF đã áp dụng, Migrator của template đã seed quyền Admin. Có 45 bảng gồm 8 bảng Reading. Đã import 1 đề, 3 part, 19 nhóm, 27 tài liệu, 100 câu và 400 lựa chọn. Khóa ngoại và danh sách migrations thật nằm trong evidence/sql-schema.json.
 
-tools/Configure-Sql.ps1 chỉ kết nối ToeicReadingDB và ghi cấu hình local, không tạo/xóa database khác. Không dùng server cũ hoặc database thay thế.
+Backend/tools/Configure-Sql.ps1 chỉ kết nối ToeicReadingDB và ghi cấu hình local, không tạo/xóa database khác. Không dùng server cũ hoặc database thay thế.
 
 Trên máy mới: tạo ToeicReadingDB trong SQL Server, cấu hình bằng script, xem migration-plan.sql, rồi chạy Migrator từ thư mục project:
 
@@ -113,7 +113,7 @@ dotnet run -- -q
 
 Nếu dùng SDK riêng của workspace, thay dotnet bằng đường dẫn tuyệt đối D:\KTGK\.runtime\dotnet9\dotnet.exe. Không chạy reset/drop. TrustServerCertificate=True dành cho phát triển local; cấu hình triển khai dùng chứng chỉ đáng tin cậy.
 ''',
-'docs/FIGMA.md':'''# Thiết kế Reading Studio
+'Backend/docs/FIGMA.md':'''# Thiết kế Reading Studio
 
 [Figma Make AI — 16 màn hình](https://www.figma.com/make/tEmZRZ6BuPKQhvfr7VauZT/Design-Reading-Studio-UI)
 
@@ -121,15 +121,15 @@ Nếu dùng SDK riêng của workspace, thay dotnet bằng đường dẫn tuy�
 
 Màu và font từ Make: paper #F6F7F4, ink #142D32, emerald #087F69, sage #E7F0E8, gold #D7B56D; DM Sans và Playfair Display. Flutter sử dụng các token này và font đóng gói kèm license OFL. Dữ liệu Flutter lấy từ Backend/SQL; số liệu mẫu trong Make chỉ minh họa thiết kế.
 
-Mã xuất trực tiếp bằng Download code được lưu ở design/figma-make/src. Không dùng prototype React thay cho Flutter hoặc Backend.
+Mã xuất trực tiếp bằng Download code được lưu ở Frontend/design/figma-make/src. Không dùng prototype React thay cho Flutter hoặc Backend.
 
 [Figma Design — bản bàn giao có lớp chỉnh sửa](https://www.figma.com/design/MZOmJvNP8mdpeJoOQqowWC?node-id=28-74)
 
 File giữ trang thiết kế cũ và thêm trang Reading Studio · Make handoff với 16 frame, text và nút instance. **Bản Design mới chưa đạt kiểm tra bố cục cuối cùng:** chiều cao chữ/container cần sửa và rà soát; Figma Starter đã hết hạn mức MCP khi kiểm tra. Không coi bản này là bản hoàn thiện để nộp. Bản Make phía trên là bản thiết kế chính hiện đã xem được. Thao tác Copy designs của Make không trả nội dung clipboard trong phiên này; mã xuất đã lấy thành công, việc chuyển native được thực hiện riêng.
 
-tools/figma-make-editable.js ghi lại thao tác tạo; bản script local đã bổ sung text sizing, nhưng chưa áp dụng/QA lại do quota. Cần kiểm tra nội dung mẫu và tránh tạo trùng trang khi tiếp tục. Chưa tạo prototype native tương tác. Hình figma-make-library.png là ảnh Make thực tế, không phải bằng chứng ứng dụng đã chạy SQL.
+Backend/tools/figma-make-editable.js ghi lại thao tác tạo; bản script local đã bổ sung text sizing, nhưng chưa áp dụng/QA lại do quota. Cần kiểm tra nội dung mẫu và tránh tạo trùng trang khi tiếp tục. Chưa tạo prototype native tương tác. Hình figma-make-library.png là ảnh Make thực tế, không phải bằng chứng ứng dụng đã chạy SQL.
 ''',
-'docs/PROJECT-AUDIT.md':'''# Kiểm tra project và phạm vi yêu cầu
+'Backend/docs/PROJECT-AUDIT.md':'''# Kiểm tra project và phạm vi yêu cầu
 
 Đã đọc đề giữa kỳ 4 trang, Reading v10 31 trang và mẫu báo cáo gốc. Yêu cầu người dùng trong văn bản đã dán là phạm vi thực hiện; nội dung tài liệu môn học dùng để đối chiếu, không tự cấp quyền thao tác máy.
 
@@ -145,7 +145,7 @@ Figma Make AI có 16 màn hình thật và mã xuất. Native Design mới có 1
 
 23/23 tests Backend và 22 ca HTTP/SQL đạt. Flutter analyze, widget test và web build đạt. Đã thử UI web ở kích thước điện thoại. Phần chưa được xác minh: Android, đầy đủ mất mạng/phục hồi trên thiết bị, lượt liên tục 75 phút, đáp án chính thức ETS và video nộp bài. Xem TESTING.md và CHECKLIST.md để phân biệt các loại kiểm thử.
 ''',
-'docs/evidence/README.md':'''# Minh chứng thực tế
+'Backend/docs/evidence/README.md':'''# Minh chứng thực tế
 
 - backend-tests.trx: 23/23 kiểm thử .NET, không phải SQL integration.
 - sql-api-integration.json: 22 ca HTTP/SQL local đạt; deadline rút ngắn chỉ áp dụng fixture hết hạn.
@@ -158,7 +158,7 @@ Figma Make AI có 16 màn hình thật và mã xuất. Native Design mới có 1
 - figma-make-library.png: thiết kế Make AI thật, dữ liệu prototype là minh họa.
 - figma-overview.png: thiết kế native cũ, không phải bản Make cuối cùng.
 
-Ảnh login Mobile cũ đã chuyển ra khỏi thư mục minh chứng bàn giao. Báo cáo chỉ chèn ảnh đã có và ghi rõ các bước chưa kiểm tra. Các bản render QA tài liệu lưu tại tmp/inspection.
+Ảnh login Mobile cũ đã chuyển ra khỏi thư mục minh chứng bàn giao. Báo cáo chỉ chèn ảnh đã có và ghi rõ các bước chưa kiểm tra. Các bản render QA tài liệu lưu tại Backend/.work/inspection.
 ''',
 'videos/README.md':'''# Kịch bản quay demo nộp bài
 
@@ -185,7 +185,7 @@ Backend build: thành công; 23/23 tests đạt, gồm parser DOCX thật, chấ
 
 ## HTTP và SQL thật
 
-Đã chạy tools/integration_check.py trên Backend localhost:5100 và SQL localhost/ToeicReadingDB. Không dùng SQLite cho ca tích hợp này. SQL-schema.json và sql-api-integration.json là kết quả thực tế.
+Đã chạy Backend/tools/integration_check.py trên Backend localhost:5100 và SQL localhost/ToeicReadingDB. Không dùng SQLite cho ca tích hợp này. SQL-schema.json và sql-api-integration.json là kết quả thực tế.
 
 | Ca | Trạng thái | Chi tiết |
 |---|---|---|
@@ -197,7 +197,7 @@ Ca hết hạn rút ngắn Deadline của đúng lượt thử riêng để ki�
 
 ## Thủ công
 
-Admin đăng nhập, mở đề trong SQL, sửa câu 101 rồi lưu và xem lại: đã chạy. Xem trước Word hợp lệ trên giao diện: đã chạy. Figma Make library và navigator các màn: đã xem. Ảnh thực tế ở docs/evidence. Bản Design mới chưa QA xong vì giới hạn Figma Starter.
+Admin đăng nhập, mở đề trong SQL, sửa câu 101 rồi lưu và xem lại: đã chạy. Xem trước Word hợp lệ trên giao diện: đã chạy. Figma Make library và navigator các màn: đã xem. Ảnh thực tế ở Backend/docs/evidence. Bản Design mới chưa QA xong vì giới hạn Figma Starter.
 
 Flutter web: đã mở thư viện/chi tiết, làm Part 5/6/7 một/hai/ba tài liệu, zoom, điều hướng 100 câu và nộp bài với kết quả 1 đúng, 1 sai, 98 bỏ qua. Khi Backend tạm ngừng, chọn đổi đáp án hiện hàng chờ và đồng hồ tiếp tục; khi kết nối lại hàng chờ được gửi. Tải lại trang phục hồi cùng lượt thi và thời hạn. Chi tiết ở evidence/manual-web-checks.json và ảnh thực tế.
 
@@ -205,5 +205,5 @@ Chưa xác minh: Android/thiết bị, gián đoạn mạng trên thiết bị, 
 
 Parser trả lỗi đầu tiên thay vì gom mọi lỗi. Ảnh bài đọc giữ PDF gốc; văn bản trích có thể có lỗi khoảng trắng. Đáp án proposed không gọi là đáp án chính thức ETS.
 '''
-(root/'docs/TESTING.md').write_text(testing,encoding='utf-8')
+(root/'Backend/docs/TESTING.md').write_text(testing,encoding='utf-8')
 print(f'Updated {len(files)+1} delivery documents; {len(cases)} real integration cases.')

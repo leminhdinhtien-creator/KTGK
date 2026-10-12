@@ -4,7 +4,7 @@ import concurrent.futures, http.cookiejar, urllib.request, urllib.error, urllib.
 import json, re, secrets, io, zipfile, time, subprocess, sys, uuid, base64
 from html.parser import HTMLParser
 
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=Path(__file__).resolve().parents[2]
 BASE='http://127.0.0.1:5100'
 records=[]
 def record(name,detail=''):
@@ -61,17 +61,17 @@ def api(path,method='GET',body=None,key=None):
     return c,j
 def state(path,method='GET',body=None,key=None):return unwrap(*api(path,method,body,key))
 def write_report():
-    (ROOT/'docs/evidence/sql-api-integration.json').write_text(json.dumps({'database':'localhost/ToeicReadingDB','cases':records,'note':'All cases ran against real HTTP and SQL. Expiry fixtures shorten only their own deadlines; exam duration remains 75 minutes.'},ensure_ascii=False,indent=2),encoding='utf-8')
+    (ROOT/'Backend/docs/evidence/sql-api-integration.json').write_text(json.dumps({'database':'localhost/ToeicReadingDB','cases':records,'note':'All cases ran against real HTTP and SQL. Expiry fixtures shorten only their own deadlines; exam duration remains 75 minutes.'},ensure_ascii=False,indent=2),encoding='utf-8')
 def main():
     tables=sql('SELECT name FROM sys.tables ORDER BY name');assert len(tables)>8
     record('SQL connection and schema',f'{len(tables)} tables')
-    (ROOT/'docs/evidence/sql-schema.json').write_text(json.dumps({'tables':tables,'foreignKeys':sql("SELECT OBJECT_NAME(parent_object_id) AS FromTable,name,OBJECT_NAME(referenced_object_id) AS ToTable FROM sys.foreign_keys ORDER BY FromTable"),'migrations':sql('SELECT MigrationId FROM __EFMigrationsHistory ORDER BY MigrationId')},indent=2),encoding='utf-8')
+    (ROOT/'Backend/docs/evidence/sql-schema.json').write_text(json.dumps({'tables':tables,'foreignKeys':sql("SELECT OBJECT_NAME(parent_object_id) AS FromTable,name,OBJECT_NAME(referenced_object_id) AS ToTable FROM sys.foreign_keys ORDER BY FromTable"),'migrations':sql('SELECT MigrationId FROM __EFMigrationsHistory ORDER BY MigrationId')},indent=2),encoding='utf-8')
     public=state('exams');record('Public exam library without login')
     c,_,_=request('/Reading/Exams');assert c in (200,302,401,403) # login page or denial
     c,j,raw=request('/Reading/EditQuestion?id=1','POST',b'{}',{'Content-Type':'application/json','X-Requested-With':'XMLHttpRequest'});assert c>=400 or (isinstance(j,dict) and j.get('success') is False) or b'name="Password"' in raw
     record('Admin write rejects missing antiforgery token')
     opener,token=admin();record('Template Admin authentication remains available')
-    before=counts();content=(ROOT/'docs/TOEIC-Reading-Test10-Tagged.docx').read_bytes()
+    before=counts();content=(ROOT/'Backend/docs/TOEIC-Reading-Test10-Tagged.docx').read_bytes()
     c,j=file_call(opener,token,'/Reading/PreviewFile',content);preview=unwrap(c,j)
     assert counts()==before and sum(len(p['questions']) for p in preview['parts'])==100
     for part in preview['parts']:
@@ -146,7 +146,7 @@ def main():
     assert state(f'attempts/{aid}/submit','POST',key=key)['skipped']==98
     record('Partial submission and post-submit locking')
     full=state(f'exams/{exam_id}/start','POST',key=key);aid=full['id']
-    data=json.loads((ROOT/'docs/reading-test10.json').read_text(encoding='utf-8'))
+    data=json.loads((ROOT/'Backend/docs/reading-test10.json').read_text(encoding='utf-8'))
     for q in data['questions']:state(f'attempts/{aid}/answer','PUT',{'number':q['number'],'letter':q['answer']},key)
     with concurrent.futures.ThreadPoolExecutor(2) as pool:
         submitted=list(pool.map(lambda _:state(f'attempts/{aid}/submit','POST',key=key),range(2)))
