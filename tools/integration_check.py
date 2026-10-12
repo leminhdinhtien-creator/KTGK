@@ -66,8 +66,8 @@ def main():
     public=state('exams');record('Public exam library without login')
     c,_,_=request('/Reading/Exams');assert c in (200,302,401,403) # login page or denial
     c,j,raw=request('/Reading/EditQuestion?id=1','POST',b'{}',{'Content-Type':'application/json','X-Requested-With':'XMLHttpRequest'});assert c>=400 or (isinstance(j,dict) and j.get('success') is False) or b'name="Password"' in raw
-    record('Admin remains protected')
-    opener,token=admin();record('Admin real authentication and permission')
+    record('Admin write rejects missing antiforgery token')
+    opener,token=admin();record('Template Admin authentication remains available')
     before=counts();content=(ROOT/'docs/TOEIC-Reading-Test10-Tagged.docx').read_bytes()
     c,j=file_call(opener,token,'/Reading/PreviewFile',content);preview=unwrap(c,j)
     assert counts()==before and sum(len(p['questions']) for p in preview['parts'])==100
