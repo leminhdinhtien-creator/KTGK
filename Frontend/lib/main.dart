@@ -7,6 +7,8 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
+import 'widgets/reading_document_image.dart';
+
 void main() => runApp(const ReadingApp());
 
 class ReadingApp extends StatelessWidget {
@@ -785,14 +787,15 @@ class _Home extends State<ReadingHome> with WidgetsBindingObserver {
                               builder: (c) => Dialog(
                                 child: InteractiveViewer(
                                   maxScale: 5,
-                                  child: Image.memory(base64Decode(d['image'])),
+                                  child: ReadingDocumentImage(
+                                    encoded: d['image'],
+                                  ),
                                 ),
                               ),
                             ),
-                            child: Image.memory(
-                              base64Decode(d['image']),
-                              errorBuilder: (_, e, s) =>
-                                  const Text('Không hiển thị được ảnh.'),
+                            child: ReadingDocumentImage(
+                              key: ValueKey(d['id']),
+                              encoded: d['image'],
                             ),
                           )
                         else if (d['textWasEdited'] != true)

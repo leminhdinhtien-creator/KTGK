@@ -12,7 +12,7 @@ using MyCompany.MyProject.Controllers;
 
 namespace MyCompany.MyProject.Web.Controllers;
 
-[AbpMvcAuthorize(PermissionNames.Pages_ReadingAdmin)]
+[ServiceFilter(typeof(ReadingAdminAccessFilter))]
 public class ReadingController : MyProjectControllerBase
 {
     private readonly ReadingService _service;

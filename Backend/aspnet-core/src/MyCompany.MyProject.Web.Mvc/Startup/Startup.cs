@@ -17,6 +17,9 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.WebEncoders;
 using System.Text.Encodings.Web;
 using System.Text.Unicode;
+using System.IO;
+using Microsoft.Extensions.FileProviders;
+using MyCompany.MyProject.Web.Controllers;
 
 namespace MyCompany.MyProject.Web.Startup;
 
@@ -51,6 +54,7 @@ public class Startup
         });
 
         services.AddScoped<IWebResourceManager, WebResourceManager>();
+        services.AddScoped<ReadingAdminAccessFilter>();
 
         services.AddSignalR();
         services.AddCors(options=>options.AddPolicy("ReadingMobile",policy=>policy.WithOrigins("http://localhost:5200","http://127.0.0.1:5200").AllowAnyHeader().AllowAnyMethod()));
@@ -83,6 +87,9 @@ public class Startup
         }
 
         app.UseStaticFiles();
+        var readingWeb=Path.GetFullPath(Path.Combine(env.ContentRootPath,"../../../../Frontend/build/web"));
+        if (Directory.Exists(readingWeb))
+            app.UseStaticFiles(new StaticFileOptions { FileProvider=new PhysicalFileProvider(readingWeb), RequestPath="/app" });
 
         app.UseRouting();
         app.UseCors("ReadingMobile");
@@ -96,7 +103,7 @@ public class Startup
         app.UseEndpoints(endpoints =>
         {
             endpoints.MapHub<AbpCommonHub>("/signalr");
-            endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
+            endpoints.MapControllerRoute("default", "{controller=Studio}/{action=Index}/{id?}");
             endpoints.MapControllerRoute("defaultWithArea", "{area}/{controller=Home}/{action=Index}/{id?}");
         });
     }

@@ -19,7 +19,7 @@ public class ReadingService : MyProjectAppServiceBase
     public ReadingService(IReadingStore store,TaggedWordParser parser) { _store=store; _parser=parser; }
     [AbpAllowAnonymous]
     public async Task<object> List() => (await _store.List()).Select(e=>new {e.Id,e.Name,e.DurationMinutes,e.TotalQuestions,e.AnswerStatus}).ToArray();
-    [AbpAuthorize(PermissionNames.Pages_ReadingAdmin)]
+    [AbpAllowAnonymous]
     [UnitOfWork]
     public async Task<int> Import(byte[] bytes)
     {
@@ -28,11 +28,11 @@ public class ReadingService : MyProjectAppServiceBase
         if((await _store.List()).Any(e=>e.SourceHash==exam.SourceHash)) throw new UserFriendlyException("File này đã được import.");
         await _store.Add(exam); await _store.Save(); return exam.Id;
     }
-    [AbpAuthorize(PermissionNames.Pages_ReadingAdmin)]
+    [AbpAllowAnonymous]
     public async Task<object> Preview(int id) => Project(await GetExam(id),true);
-    [AbpAuthorize(PermissionNames.Pages_ReadingAdmin)]
+    [AbpAllowAnonymous]
     public object PreviewFile(byte[] bytes) => Project(_parser.Parse(bytes),true);
-    [AbpAuthorize(PermissionNames.Pages_ReadingAdmin)]
+    [AbpAllowAnonymous]
     [UnitOfWork]
     public async Task EditQuestion(int id,QuestionEdit input)
     {
@@ -44,7 +44,7 @@ public class ReadingService : MyProjectAppServiceBase
         e.AnswerStatus=e.Parts.SelectMany(p=>p.Questions).All(q=>q.AnswerStatus=="verified")?"verified":"proposed";
         await _store.Save();
     }
-    [AbpAuthorize(PermissionNames.Pages_ReadingAdmin)]
+    [AbpAllowAnonymous]
     [UnitOfWork]
     public async Task EditDocument(int id,DocumentEdit input)
     {

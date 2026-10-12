@@ -2,7 +2,7 @@
 
 Lê Minh Đình Tiến · 2380602224 · 23DTHC7.
 
-Backend dùng template ASP.NET Boilerplate MVC hiện có, .NET 9 và SQL Server local. Mobile Flutter mở thẳng thư viện, không đăng nhập. Admin giữ authentication và quyền Pages.ReadingAdmin.
+Backend dùng template ASP.NET Boilerplate MVC hiện có, .NET 9 và SQL Server local. Mobile Flutter mở thẳng thư viện, không đăng nhập. Admin demo local vào trực tiếp; ngoài Development/localhost vẫn yêu cầu quyền Pages.ReadingAdmin.
 
 Đã kiểm chứng ngày 12/10/2026: build Backend; 23/23 kiểm thử Backend; kết nối và migrations SQL localhost; import Word hợp lệ, từ chối file sai không ghi dở; sửa/lưu/đọc lại SQL; API thi và chấm bài trống, một phần, đủ 100 câu, nộp trùng và hết hạn. Kết quả chi tiết: [TESTING](docs/TESTING.md). Flutter có bản web và kiểm thử không có màn hình đăng nhập. Chưa kiểm chứng Android trên thiết bị/emulator, mất mạng trên thiết bị, hoặc một lượt thi liên tục đủ 75 phút. Không tuyên bố hoàn thành 100%.
 
@@ -34,7 +34,7 @@ powershell -ExecutionPolicy Bypass -File tools/Configure-Sql.ps1
 powershell -ExecutionPolicy Bypass -File tools/Start-Backend.ps1
 ```
 
-Mở http://localhost:5100/Reading. Đăng nhập tài khoản Admin của template đã được seed. Password không nằm trong hướng dẫn bàn giao; dùng thông tin Admin hiện có. Script cấu hình không yêu cầu mật khẩu SQL, chỉ kiểm tra Windows Authentication và ghi file local. Nếu chuyển sang máy mới, đọc [SQL-SETUP](docs/SQL-SETUP.md) để chạy Migrator.
+Mở http://localhost:5100/ để chọn Admin hoặc User. Admin demo trên localhost không cần mật khẩu. Xem [LOCAL-DEMO](docs/LOCAL-DEMO.md) để build Flutter dưới /app/ và chạy cùng Backend. Script cấu hình không yêu cầu mật khẩu SQL, chỉ kiểm tra Windows Authentication và ghi file local. Nếu chuyển sang máy mới, đọc [SQL-SETUP](docs/SQL-SETUP.md) để chạy Migrator.
 
 Nếu cần tạo lại tài nguyên giao diện Admin:
 
