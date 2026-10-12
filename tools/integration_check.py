@@ -1,7 +1,7 @@
 """Exercise the actual MVC/API and local SQL Server; never print secrets or tokens."""
 from pathlib import Path
 import concurrent.futures, http.cookiejar, urllib.request, urllib.error, urllib.parse
-import json, re, secrets, io, zipfile, time, subprocess, sys, uuid
+import json, re, secrets, io, zipfile, time, subprocess, sys, uuid, base64
 from html.parser import HTMLParser
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -17,7 +17,10 @@ def sql(query):
 '@;$r=$q.ExecuteReader();$rows=@();while($r.Read()){{$o=@{{}};for($i=0;$i -lt $r.FieldCount;$i++){{$o[$r.GetName($i)]=$r.GetValue($i)}};$rows+=$o}};ConvertTo-Json -InputObject $rows -Compress -Depth 4}}finally{{$c.Dispose()}}"""
     r=subprocess.run(['powershell','-NoProfile','-Command',code],capture_output=True,text=True,check=True)
     return json.loads(r.stdout)
-def counts():
+def counts(exam_id=None):
+    if exam_id is not None:
+        n=int(exam_id)
+        return sql(f"SELECT (SELECT COUNT(*) FROM ReadingExams WHERE Id={n}) Exams,(SELECT COUNT(*) FROM ReadingParts WHERE ExamId={n}) Parts,(SELECT COUNT(*) FROM ReadingGroups g JOIN ReadingParts p ON p.Id=g.PartId WHERE p.ExamId={n}) Groups,(SELECT COUNT(*) FROM ReadingDocuments d JOIN ReadingGroups g ON g.Id=d.GroupId JOIN ReadingParts p ON p.Id=g.PartId WHERE p.ExamId={n}) Documents,(SELECT COUNT(*) FROM ReadingQuestions WHERE ExamId={n}) Questions,(SELECT COUNT(*) FROM ReadingChoices c JOIN ReadingQuestions q ON q.Id=c.QuestionId WHERE q.ExamId={n}) Choices")[0]
     return sql('SELECT (SELECT COUNT(*) FROM ReadingExams) Exams,(SELECT COUNT(*) FROM ReadingParts) Parts,(SELECT COUNT(*) FROM ReadingGroups) Groups,(SELECT COUNT(*) FROM ReadingDocuments) Documents,(SELECT COUNT(*) FROM ReadingQuestions) Questions,(SELECT COUNT(*) FROM ReadingChoices) Choices')[0]
 def request(path,method='GET',data=None,headers=None,opener=None):
     r=urllib.request.Request(BASE+path,data=data,method=method,headers=headers or {})
@@ -81,13 +84,14 @@ def main():
     assert bad.getvalue()!=content
     c,j=file_call(opener,token,'/Reading/Import',bad.getvalue());assert c>=400 or j.get('success') is False
     assert counts()==before;record('Invalid DOCX rejected with no partial records')
-    if not public:
+    original=next((e for e in public if e['name']==preview['name']),None)
+    if original is None:
         c,j=file_call(opener,token,'/Reading/Import',content);exam_id=unwrap(c,j)['id'];record('Valid DOCX atomic SQL import')
-    else:exam_id=public[0]['id'];record('Existing valid imported exam reused')
+    else:exam_id=original['id'];record('Existing valid imported exam reused')
     expected={'Exams':1,'Parts':3,'Groups':19,'Documents':27,'Questions':100,'Choices':400}
-    assert counts()==expected;record('Actual SQL row counts',str(expected))
+    assert counts(exam_id)==expected;record('Actual SQL row counts',str(expected))
     c,j=file_call(opener,token,'/Reading/Import',content);assert c>=400 or j.get('success') is False
-    assert counts()==expected;record('Duplicate import rejected')
+    assert counts(exam_id)==expected;record('Duplicate import rejected')
     c,j,_=request('/Reading/Preview?id='+str(exam_id),opener=opener);exam=unwrap(c,j)
     assert len(exam['parts'][1]['groups'])==4 and any(len(g['documents'])==3 for g in exam['parts'][2]['groups'])
     record('Admin preview grouping and image content')
@@ -98,7 +102,8 @@ def main():
             payload['text']=text;c,j,_=request('/Reading/EditQuestion?id='+str(exam_id),'POST',json.dumps(payload).encode(),{'Content-Type':'application/json','RequestVerificationToken':token,'X-XSRF-TOKEN':token},opener);unwrap(c,j)
             assert sql('SELECT Text FROM ReadingQuestions WHERE Number=101')[0]['Text']==text
         d=exam['parts'][1]['groups'][0]['documents'][0]
-        for text,image in ((d['text']+' ',None),(d['text'],d['image'])):
+        original_image=d['image'] or base64.b64encode(request(d['imageUrl'],opener=opener)[2]).decode()
+        for text,image in ((d['text']+' ',None),(d['text'],original_image)):
             payload={'id':d['id'],'text':text,'imageBase64':image,'removeImage':False}
             c,j,_=request('/Reading/EditDocument?id='+str(exam_id),'POST',json.dumps(payload).encode(),{'Content-Type':'application/json','RequestVerificationToken':token,'X-XSRF-TOKEN':token},opener);unwrap(c,j)
             assert sql(f'SELECT Text FROM ReadingDocuments WHERE Id={d["id"]}')[0]['Text']==text

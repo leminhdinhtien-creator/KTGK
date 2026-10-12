@@ -41,6 +41,14 @@ public class ReadingApiController : MyProjectControllerBase
     private readonly ReadingService _service;
     public ReadingApiController(ReadingService service) { _service=service; }
     private string SessionKey => Request.Headers["X-Reading-Session"].ToString();
+    [HttpGet("documents/{id:int}/image")]
+    public async Task<IActionResult> Image(int id)
+    {
+        var document=await _service.DocumentImage(id);
+        if(document?.Image==null) return NotFound();
+        Response.Headers["Cache-Control"]="no-cache";
+        return File(document.Image,document.ImageMime);
+    }
     [HttpGet("exams")] public Task<object> Exams() => _service.List();
     [HttpPost("exams/{id:int}/start"),UnitOfWork] public Task<object> Start(int id) => _service.Start(id,SessionKey);
     [HttpGet("attempts/{id:guid}"),UnitOfWork] public Task<object> Progress(Guid id) => _service.Progress(id,SessionKey);

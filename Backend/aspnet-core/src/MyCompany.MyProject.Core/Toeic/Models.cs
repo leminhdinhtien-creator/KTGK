@@ -40,6 +40,7 @@ public class ReadingDocument : Entity
     [Required] public string Text { get; set; }
     public bool TextWasEdited { get; set; }
     public byte[] Image { get; set; }
+    [System.ComponentModel.DataAnnotations.Schema.NotMapped] public bool HasImage { get; set; }
     [MaxLength(30)] public string ImageMime { get; set; }
 }
 public class ReadingQuestion : Entity
@@ -90,7 +91,8 @@ public class ReadingAnswer : Entity
 public interface IReadingStore : ITransientDependency
 {
     Task<List<ReadingExam>> List();
-    Task<ReadingExam> Exam(int id);
+    Task<ReadingExam> Exam(int id, bool includeImages = true);
+    Task<ReadingDocument> DocumentImage(int id);
     Task Add(ReadingExam exam);
     Task Save();
     Task<bool> HasAttempts(int examId);

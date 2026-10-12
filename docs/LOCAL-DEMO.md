@@ -20,3 +20,7 @@ Backend phục vụ bản Flutter ở `/app/` từ `Frontend/build/web`. Không 
 Kiểm tra ngày 12/10/2026: trang chung/Flutter và Admin local trả HTTP 200; xem trước DOCX không cần đăng nhập đạt; thiếu CSRF trả 400; Admin truy cập qua IP LAN khi chưa đăng nhập trả 401. Flutter analyze không có vấn đề; 2 widget tests đạt.
 
 Đề đã có lượt thi vẫn khóa chỉnh sửa để giữ kết quả cũ. Import cùng Word vẫn báo trùng. Dùng bản đề thử mới cho đoạn quay biên tập.
+
+Sửa lỗi mở bài quá thời gian chờ ngày 12/10/2026: các phản hồi mở đề, lưu đáp án và xem kết quả chỉ chứa nội dung và đường dẫn ảnh. Ảnh SQL tải riêng khi xem bài đọc. Backend đọc từng bảng theo khóa, ghép cấu trúc trong ứng dụng để tránh SQL phải chờ cấp bộ nhớ cho truy vấn Include có sắp xếp. Frontend giữ ảnh qua các tick và hiển thị thông báo tiếng Việt khi máy chủ phản hồi chậm.
+
+Kiểm tra trên cả hai đề hiện có: phản hồi mở đề khoảng 60 KB; mở bài và lưu đáp án dưới 3 giây trên máy demo. Chạy `tools/check_reading_payload.py` để kiểm tra lại mở bài, ảnh, lưu/khôi phục đáp án, nộp và kết quả. Sau khi cập nhật bản build, nhấn Ctrl+F5 ở trang chung để tải giao diện mới.

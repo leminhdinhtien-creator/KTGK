@@ -31,13 +31,15 @@ public class ReadingService : MyProjectAppServiceBase
     [AbpAllowAnonymous]
     public async Task<object> Preview(int id) => Project(await GetExam(id),true);
     [AbpAllowAnonymous]
+    public Task<ReadingDocument> DocumentImage(int id) => _store.DocumentImage(id);
+    [AbpAllowAnonymous]
     public object PreviewFile(byte[] bytes) => Project(_parser.Parse(bytes),true);
     [AbpAllowAnonymous]
     [UnitOfWork]
     public async Task EditQuestion(int id,QuestionEdit input)
     {
         await _store.Lock("reading-exam:"+id); await Editable(id);
-        var e=await GetExam(id); var q=e.Parts.SelectMany(p=>p.Questions).SingleOrDefault(q=>q.Number==input.Number);
+        var e=await GetExam(id,true); var q=e.Parts.SelectMany(p=>p.Questions).SingleOrDefault(q=>q.Number==input.Number);
         if(q==null || string.IsNullOrWhiteSpace(input.Text) || input.Options==null || input.Options.Length!=4 || input.Options.Any(string.IsNullOrWhiteSpace) || !new[]{"A","B","C","D"}.Contains(input.Answer) || !new[]{"proposed","verified"}.Contains(input.Status)) throw new UserFriendlyException("Nội dung câu hỏi hoặc đáp án không hợp lệ.");
         q.Text=input.Text; q.CorrectAnswer=input.Answer; q.AnswerStatus=input.Status;
         for(var i=0;i<4;i++) q.Choices.Single(c=>c.Letter=="ABCD"[i].ToString()).Text=input.Options[i];
@@ -49,7 +51,7 @@ public class ReadingService : MyProjectAppServiceBase
     public async Task EditDocument(int id,DocumentEdit input)
     {
         await _store.Lock("reading-exam:"+id); await Editable(id);
-        var e=await GetExam(id); var doc=e.Parts.SelectMany(p=>p.Groups).SelectMany(g=>g.Documents).SingleOrDefault(d=>d.Id==input.Id);
+        var e=await GetExam(id,true); var doc=e.Parts.SelectMany(p=>p.Groups).SelectMany(g=>g.Documents).SingleOrDefault(d=>d.Id==input.Id);
         if(doc==null || string.IsNullOrWhiteSpace(input.Text)) throw new UserFriendlyException("Nội dung tài liệu không hợp lệ.");
         var p=e.Parts.Single(p=>p.Groups.Any(g=>g.Id==doc.GroupId));
         if(p.Number==6)
@@ -115,10 +117,10 @@ public class ReadingService : MyProjectAppServiceBase
         await _store.Lock("reading-attempt:"+id); var a=await _store.Attempt(id);
         if(a==null || !ReadingSession.Matches(sessionKey,a.GuestKeyHash)) throw new AbpAuthorizationException("Không có quyền xem lượt thi."); return a;
     }
-    private async Task<ReadingExam> GetExam(int id) => await _store.Exam(id) ?? throw new UserFriendlyException("Không tìm thấy đề.");
+    private async Task<ReadingExam> GetExam(int id,bool includeImages=false) => await _store.Exam(id,includeImages) ?? throw new UserFriendlyException("Không tìm thấy đề.");
     private static void Expire(ReadingAttempt a,ReadingExam e) { if(DateTime.UtcNow>=a.Deadline) ReadingScoring.Submit(a,e.Parts.SelectMany(p=>p.Questions),DateTime.UtcNow); }
     private static object State(ReadingAttempt a,ReadingExam e) => new {a.Id,a.ExamId,a.StartedAt,a.Deadline,a.SubmittedAt,a.Status,a.Correct,a.Wrong,a.Skipped,ServerNow=DateTime.UtcNow,Answered=a.Answers.Count,Answers=a.Answers.Select(x=>new {Number=e.Parts.SelectMany(p=>p.Questions).Single(q=>q.Id==x.QuestionId).Number,x.Letter}).ToArray(),Exam=Project(e,false)};
-    private static object Project(ReadingExam e,bool admin) => new {e.Id,e.Name,e.DurationMinutes,e.TotalQuestions,e.AnswerStatus,Parts=e.Parts.OrderBy(p=>p.Number).Select(p=>new {p.Number,Groups=p.Groups.Select(g=>new {g.Id,g.Key,Documents=g.Documents.OrderBy(d=>d.Order).Select(d=>new {d.Id,d.Order,d.Text,d.TextWasEdited,Image=d.Image==null?null:Convert.ToBase64String(d.Image),d.ImageMime}).ToArray()}).ToArray(),Questions=p.Questions.OrderBy(q=>q.Number).Select(q=>admin?(object)new {q.Number,q.Text,q.GroupId,q.CorrectAnswer,q.AnswerStatus,Options=q.Choices.OrderBy(c=>c.Letter).Select(c=>new {c.Letter,c.Text}).ToArray()}:new {q.Number,q.Text,q.GroupId,Options=q.Choices.OrderBy(c=>c.Letter).Select(c=>new {c.Letter,c.Text}).ToArray()}).ToArray()}).ToArray()};
+    private static object Project(ReadingExam e,bool admin) => new {e.Id,e.Name,e.DurationMinutes,e.TotalQuestions,e.AnswerStatus,Parts=e.Parts.OrderBy(p=>p.Number).Select(p=>new {p.Number,Groups=p.Groups.Select(g=>new {g.Id,g.Key,Documents=g.Documents.OrderBy(d=>d.Order).Select(d=>new {d.Id,d.Order,d.Text,d.TextWasEdited,Image=d.Image==null?null:Convert.ToBase64String(d.Image),d.ImageMime,ImageUrl=(d.HasImage || d.Image!=null) && d.Id>0 ? "/api/reading/documents/"+d.Id+"/image" : null}).ToArray()}).ToArray(),Questions=p.Questions.OrderBy(q=>q.Number).Select(q=>admin?(object)new {q.Number,q.Text,q.GroupId,q.CorrectAnswer,q.AnswerStatus,Options=q.Choices.OrderBy(c=>c.Letter).Select(c=>new {c.Letter,c.Text}).ToArray()}:new {q.Number,q.Text,q.GroupId,Options=q.Choices.OrderBy(c=>c.Letter).Select(c=>new {c.Letter,c.Text}).ToArray()}).ToArray()}).ToArray()};
 }
 public class QuestionEdit { public int Number {get;set;} public string Text {get;set;} public string[] Options {get;set;} public string Answer {get;set;} public string Status {get;set;} }
 public class DocumentEdit { public int Id {get;set;} public string Text {get;set;} public string ImageBase64 {get;set;} public bool RemoveImage {get;set;} }

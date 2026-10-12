@@ -150,7 +150,7 @@ class _Home extends State<ReadingHome> with WidgetsBindingObserver {
           });
     if (body != null) req.body = jsonEncode(body);
     final r = await http.Response.fromStream(
-      await req.send().timeout(const Duration(seconds: 15)),
+      await req.send().timeout(const Duration(seconds: 45)),
     );
     dynamic j;
     try {
@@ -179,7 +179,11 @@ class _Home extends State<ReadingHome> with WidgetsBindingObserver {
       await fn();
     } catch (e) {
       if (mounted) {
-        setState(() => error = e.toString().replaceFirst('Exception: ', ''));
+        setState(
+          () => error = e is TimeoutException
+              ? 'Máy chủ phản hồi chậm. Vui lòng thử lại.'
+              : e.toString().replaceFirst('Exception: ', ''),
+        );
       }
     } finally {
       if (mounted) setState(() => busy = false);
@@ -780,7 +784,8 @@ class _Home extends State<ReadingHome> with WidgetsBindingObserver {
                             d['text'],
                             style: const TextStyle(height: 1.7, fontSize: 16),
                           ),
-                        if (d['image'] != null && d['textWasEdited'] != true)
+                        if ((d['image'] != null || d['imageUrl'] != null) &&
+                            d['textWasEdited'] != true)
                           GestureDetector(
                             onTap: () => showDialog(
                               context: context,
@@ -789,6 +794,11 @@ class _Home extends State<ReadingHome> with WidgetsBindingObserver {
                                   maxScale: 5,
                                   child: ReadingDocumentImage(
                                     encoded: d['image'],
+                                    url: d['imageUrl'] == null
+                                        ? null
+                                        : Uri.parse(server.text)
+                                              .resolve(d['imageUrl'])
+                                              .toString(),
                                   ),
                                 ),
                               ),
@@ -796,6 +806,11 @@ class _Home extends State<ReadingHome> with WidgetsBindingObserver {
                             child: ReadingDocumentImage(
                               key: ValueKey(d['id']),
                               encoded: d['image'],
+                              url: d['imageUrl'] == null
+                                  ? null
+                                  : Uri.parse(server.text)
+                                        .resolve(d['imageUrl'])
+                                        .toString(),
                             ),
                           )
                         else if (d['textWasEdited'] != true)
@@ -803,7 +818,8 @@ class _Home extends State<ReadingHome> with WidgetsBindingObserver {
                             d['text'],
                             style: const TextStyle(height: 1.7, fontSize: 16),
                           ),
-                        if (d['image'] != null && d['textWasEdited'] != true)
+                        if ((d['image'] != null || d['imageUrl'] != null) &&
+                            d['textWasEdited'] != true)
                           const Text(
                             'Chạm ảnh để phóng to',
                             style: TextStyle(fontSize: 12),

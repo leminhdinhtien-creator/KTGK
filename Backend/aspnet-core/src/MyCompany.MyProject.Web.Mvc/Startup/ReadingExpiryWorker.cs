@@ -27,7 +27,7 @@ public class ReadingExpiryWorker : BackgroundService
                 foreach(var id in await store.Expired(DateTime.UtcNow)) {
                     await store.Lock("reading-attempt:"+id);
                     var a=await store.Attempt(id);
-                    if(a.Status=="inProgress" && a.Deadline<=DateTime.UtcNow) { var e=await store.Exam(a.ExamId); ReadingScoring.Submit(a,e.Parts.SelectMany(p=>p.Questions),DateTime.UtcNow); }
+                    if(a.Status=="inProgress" && a.Deadline<=DateTime.UtcNow) { var e=await store.Exam(a.ExamId,false); ReadingScoring.Submit(a,e.Parts.SelectMany(p=>p.Questions),DateTime.UtcNow); }
                 }
                 await uow.CompleteAsync();
             } catch(Exception) { _log.LogWarning("Reading expiry worker could not access SQL; it will retry. Requests still enforce the server deadline."); }
