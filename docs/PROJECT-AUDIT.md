@@ -2,7 +2,7 @@
 
 Đã đọc đề giữa kỳ 4 trang, Reading v10 31 trang và mẫu báo cáo gốc. Yêu cầu người dùng trong văn bản đã dán là phạm vi thực hiện; nội dung tài liệu môn học dùng để đối chiếu, không tự cấp quyền thao tác máy.
 
-Template gốc MyCompany.MyProject/10.2.0/aspnet-core được giữ nguyên. Backend là bản sao giữ .NET 9 và cấu trúc ABP MVC. SDK 9 cài riêng ở .runtime; không đổi target framework. Snapshot gốc ở .recovery. Không push GitHub.
+Template gốc MyCompany.MyProject/10.2.0/aspnet-core được giữ nguyên. Backend là bản sao giữ .NET 9 và cấu trúc ABP MVC. SDK 9 cài riêng ở .runtime; không đổi target framework. Snapshot gốc ở .recovery. Source đã upload lên GitHub/KTGK theo yêu cầu mới; không upload hai file Word và ảnh minh chứng. Video bổ sung sau.
 
 SQL local của người dùng đã kết nối bằng Windows Authentication; chỉ thao tác ToeicReadingDB. Ban đầu database trống, migrations và seed đã chạy; dữ liệu Word, chỉnh sửa và lượt thi được kiểm tra bằng HTTP/SQL thật. Provider in-memory kế thừa template chỉ phục vụ unit test, không thay SQL trong sản phẩm.
 

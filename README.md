@@ -70,4 +70,4 @@ flutter build web --dart-define=API_URL=http://localhost:5100
 
 tools/integration_check.py kiểm thử HTTP và SQL thật khi Backend đang chạy. Script tạo các lượt thử riêng và rút ngắn hạn của đúng fixture hết hạn; không sửa thời lượng đề 75 phút. Có thể chạy --setup-only để kiểm tra import/xem trước. Đề có lượt thi sẽ khóa kiểm thử sửa.
 
-Đối chiếu 8 tiêu chí trong [CHECKLIST](CHECKLIST.md). Chưa push hoặc công khai GitHub. Giữ .runtime, .recovery, bin/obj, node_modules, cấu hình local và secrets ngoài Git. Template gốc MyCompany.MyProject được giữ nguyên.
+Đối chiếu 8 tiêu chí trong [CHECKLIST](CHECKLIST.md). Source đã upload lên https://github.com/leminhdinhtien-creator/KTGK (nhánh main); video bổ sung sau. Giữ .runtime, .recovery, bin/obj, node_modules, cấu hình local và secrets ngoài Git. Template gốc MyCompany.MyProject được giữ nguyên.
